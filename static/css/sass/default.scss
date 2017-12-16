@@ -1,0 +1,76 @@
+@charset "utf-8";  
+/* CSS Document */ 
+
+/*! ATTENTION:This project uses SASS! Please make your CSS edits in sass/default.scss. */
+
+/* Basic Includes
+   ================================ */
+@import 'variables'; 
+@import 'misc/mixins';
+@import 'misc/reset';
+@import 'misc/custom_grid';
+@import 'misc/container'; 
+@import 'misc/extends'; 
+@import 'misc/fonts'; 
+@import 'misc/typography'; 
+@import 'misc/positioning';
+  
+/* Begin Basic Coding
+   ================================ */
+/* Basic
+----------------------------- */
+html,
+body {
+    @include size($viewportSize);
+    min-height: 100% !important;
+}
+body {
+    height: auto; 
+    background:$white none repeat scroll 0 0;
+    color: $baseColor;
+    font-family: $quaternaryFont !important;
+    font-weight: $weightRegular;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ul li, ol li {
+    font-weight: $weightRegular;
+}
+
+/* End Basic Coding
+   ================================ */
+
+/* Miscellaneous Includes
+   ================================ */
+@import 'misc/globalClasses';
+
+/* Elements Includes
+   ================================ */
+
+@import 'elements/key_elements/buttons';
+@import 'elements/key_elements/form';
+@import 'elements/pagecontrols/pageheader'; 
+@import 'elements/pagecontrols/pagefooter';
+
+@import 'elements/navigation/responsive_navigation';
+@import 'elements/key_elements/cards';
+@import 'elements/key_elements/layout';
+@import 'elements/key_elements/tab_view';
+@import 'elements/key_elements/banner_section';
+@import 'elements/key_elements/articles';
+@import 'elements/key_elements/articles-slideWindow';
+@import 'elements/key_elements/channel_overview'; 
+@import 'elements/key_elements/account-modal';
+@import 'elements/key_elements/search';
+@import 'elements/key_elements/blog';
+@import 'elements/key_elements/contact';
+@import 'elements/key_elements/modal';
+@import 'elements/dependencies_Breakup';
+
+/* Pages Includes
+   ================================ */
+
+@import 'pages/section';
+@import 'pages/user-profile';
+@import 'pages/blog';  
+@import 'pages/subscription';

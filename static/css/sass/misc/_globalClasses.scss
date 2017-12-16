@@ -1,0 +1,291 @@
+/* Global classes
+================================ */
+.upper { 
+    text-transform: uppercase; 
+}
+.hide {
+    display: none;
+}
+.fullwidth { 
+    width: $viewportSize !important;
+}
+.green-color {
+    color: $green;
+}
+.white {
+    &__bg {
+        background: $white !important;
+    }
+    &__color {
+        color: $white !important;
+    }
+}
+.red {
+    &__bg {
+        background: $red !important;
+    }
+    &__color {
+        color: $red !important;
+    }
+}
+.badge, .label {
+    &-success {
+        background: $success none repeat scroll 0 0;
+    }
+    &-danger {
+        background: $error none repeat scroll 0 0;
+    }
+    &-warning {
+        background: $warning none repeat scroll 0 0;
+    }
+    &-info {
+        background: $info none repeat scroll 0 0;
+    }
+}
+.image-covered {
+    @include background-size(cover);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.mob__fullwidth {
+    @media #{$media-phone} { 
+        width: $viewportSize;
+    }
+    &-599 {
+        @media #{$media-tablet} {
+            width: $viewportSize;
+        }
+    }
+}
+.page__body {
+    @include padding(120px 0 80px);
+}
+.section {
+    &__head {
+        @include padding(15px 0);
+        h1 {
+            @include font-size(43);
+            line-height: 1.2;
+            letter-spacing: 1.2px;
+        }
+        h2 {
+            @include font-size(30);
+            letter-spacing: 1.2px;
+        }
+        h3 {
+            @include font-size(20);
+            letter-spacing: 1.2px;
+        }
+        &.blue-text {
+            h3 {
+                color: $blue;
+            }
+        }
+        &.white-text {
+            h3 {
+                color: $white;
+            }
+        }
+        &.no-lineHeight {
+            h1, h2 {
+                line-height: 1 !important;
+            }
+        }
+        &.with-border {
+            border-bottom: 1px solid $borderlight;
+            @include padding(15px 0 5px);
+        }
+        &.lighter {
+            h1,h2, h3 { 
+                @include font-size(30);
+                letter-spacing: 2px;
+                font-family: $secondaryFont-regular;
+            }
+            h3 { 
+                @include font-size(24); 
+            }
+        }
+    }
+}
+.page__section-head {
+    background-color: $blue;
+    position: relative;
+    @include padding(30px 0 10px);
+    overflow: hidden;
+    &:before {
+        content:'';
+        @include linear-gradient(rgba($zblack,0), rgba($zblack,0.43)); 
+        position: absolute;
+        @include size($viewportSize);
+        left: 0;
+        top: 0;
+        @include opacity(0.8);
+    }
+    &.bg-image {
+        height: 300px;
+    } 
+    h1 {
+        @include padding(30px 0);
+        @include font-size(36);
+        position: relative;
+        z-index: 1;
+        height: $viewportSize;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        letter-spacing: 2px;
+    }
+}
+
+.no-data {
+    @include font-size();
+    margin: 60px 0 15px; 
+    @include padding(25px 0);
+    background: darken($white, 5%) none repeat scroll 0 0;
+    border: 1px solid darken($white, 8%);
+    @include border-radius(4px);
+    p {
+        margin-bottom: 0px;
+    }
+    &.less-space {
+        margin: 20px 0;
+        @include padding(15px 0);
+    }
+}
+.no-link {
+    cursor: default !important;
+}
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+.load__more {
+    width: $viewportSize;
+    text-align: center;
+    margin: 40px 0;
+    .button {
+        @include font-size();
+        @include padding(8px 30px);
+        background: $blue none repeat scroll 0 0 !important;
+        @include border-radius(1px);
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        color: $white;
+    }
+}
+.customIcons {
+    background-image: url('../images/icons/editor/sprites.svg');
+    background-repeat: no-repeat;
+    display: block;
+    &-bar {
+       @include size(32px);
+       background-size: 752px 512px;
+       background-position: -720px 0;
+    }
+    &-search {
+        background-position: -289px -21px;
+        background-size: 380px auto;
+        @include size(22px);
+        &white {
+            background-position: -312px -21px;
+        }
+    }
+    &-close {
+        background-position: -337px -21px;
+        background-size: 380px auto;
+        @include size(22px);
+        &white {
+            background-position: -361px -21px;
+        }
+    }
+    &-instagram {
+        background-position: -607px 0;
+        @include size(30px);
+        background-size: 680px auto;
+    }
+    &-linkedin {
+        &-square {
+            background-position: -477px 0;
+            @include size(30px);
+            background-size: 680px auto;
+            &Small {
+                background-position: -318px 1px;
+                background-size: 500px auto;
+                @include size(22px);
+            }
+        }
+    }
+    &-facebook {
+        background-position: -210.5px 0;
+        @include size(30px);
+        background-size: 680px auto;
+        &-square {
+            &Small {
+                background-position: -127px 1px;
+                background-size: 500px auto;
+                @include size(22px);  
+            }
+        }
+        &Small {
+            @include size(20px);
+            background-position: -113px 5px;
+            background-size: 380px auto;
+        }
+    }
+    &-twitter {
+        background-position: -392px 0;
+        @include size(30px);
+        background-size: 680px auto;
+        width: 34px;
+        &-square {
+            &Small {
+                background-position: -255px 1px;
+                background-size: 500px auto;
+                @include size(22px);  
+            }
+        }
+        &Small {
+            @include size(20px); 
+            width: 24px;
+            background-size: 320px auto;
+            background-position: -179px 6px;
+        }
+    }
+    &-google-plus {
+        background-position: -303px 0;
+        @include size(30px);
+        background-size: 680px auto;
+    }
+    &-tumblr-square {
+        background-position: -521px 0;
+        @include size(30px);
+        background-size: 680px auto;
+    }
+    &-youtube-square {
+        background-position: -564px 0;
+        @include size(30px);
+        background-size: 680px auto;
+    }
+    &-weibo {
+        background-position: -130px 0;
+        @include size(30px);
+        background-size: 680px auto;
+        width: 36px;
+    }
+    &-print {
+        &Small {
+            background-position: -31px 1px; 
+            background-size: 500px auto;
+            @include size(22px);
+        }
+    }
+    &-envelope {
+        &-square {
+            &Small {
+                background-position: 1px 1px;
+                background-size: 500px auto;
+                @include size(22px);  
+            }
+        }
+    }
+}

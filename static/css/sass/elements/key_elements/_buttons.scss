@@ -1,0 +1,59 @@
+/* articles section
+================================ */
+.button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    @include padding(10px 16px);
+    display: inline-block;
+    border: 1px solid $transparent;
+    @include font-size();
+    line-height: 1;
+    letter-spacing: 1.4px; 
+    @include transition(all 0.3s ease); 
+    &-block {
+        width: $viewportSize;
+        display: block;
+    }
+    &-rounded {
+        @include border-radius(25px);
+    }
+    &-radius {
+        @include border-radius(4px); 
+    }
+    &-bordered {
+        &.grey {
+            border-color: #979797 !important;
+            color: $black !important;
+            background: none repeat scroll 0 0;
+            &:hover, &:focus { 
+                color: $white !important;
+                background: #979797 none repeat scroll 0 0;
+            }
+        }
+    }
+    &-grey {
+        background: $black none repeat scroll 0 0;
+        color: $white !important;
+        border-color: $black;
+        &:hover, &:focus {
+            background: lighten($black, 8%) none repeat scroll 0 0; 
+        }
+    }
+    &-blue {
+        background: $blue none repeat scroll 0 0;
+        color: $white !important;
+        border-color: $blue;
+        &:hover, &:focus {
+            background: lighten($blue, 8%) none repeat scroll 0 0;
+            border-color: lighten($blue, 8%);
+        }
+    }
+    i {
+        margin-right: 8px;
+    }
+    &:focus {
+        outline: none;
+    }
+}

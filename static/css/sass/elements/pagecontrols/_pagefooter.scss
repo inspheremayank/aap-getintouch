@@ -1,0 +1,122 @@
+/* Page Footer section
+================================ */
+.footer {
+    &__top {
+        position: relative;
+        background: $zblack none repeat scroll 0 0 !important;
+/*        &:before {
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include size($viewportSize);
+            background: rgba($blue,0.9) none repeat scroll 0 0; 
+            z-index: 10;
+        }*/
+        &-content {
+            position: relative;
+            z-index: 11;
+            color: $white;
+            text-align: center;
+            @include padding(20px);
+        }
+        h2 {
+            @include font-size(20);
+            font-family: $secondaryFont-bold !important;
+            margin: 0px !important;
+        }
+        &-listing {
+            ul {
+                line-height: 1 !important; 
+                li {
+                    display: inline-block;
+                    @include padding(20px 0 0);
+                    a {
+                        @include transition(all 0.3s ease);
+                        .customIcons {
+                            @media #{$media-phone} {
+                                margin: 0 auto;
+                            }
+                        }
+                        &:hover, &:focus {
+                            @include opacity(0.6);
+                            @include transition(all 0.3s ease);
+                        }
+                    }
+                    + li {
+                        margin-left: 25px;
+                        @media #{$media-phone} {
+                            margin-left: 0px;
+                        }
+                    }
+                    @media #{$media-phone} {
+                        width: calc(#{$viewportSize} / 4 - 4px);
+                    }
+                }
+            }
+        }
+    }
+    
+    &__main {
+        @include padding(20px 0);
+        background: $zblack none repeat scroll 0 0;
+        &-content {
+            &-listing {
+                ul {
+                    line-height: 1 !important; 
+                    li {
+                        a {
+                            @include transition(all 0.3s ease);
+                            display: block;
+                            color: darken($white, 8%);
+                            @include font-size(13);
+                            letter-spacing: 1px; 
+                            &:hover, &:focus {
+                                color: $white;
+                            }
+                        }
+                        + li {
+                            margin-top: 5px;
+                        }
+                    }
+                }
+                &.multiple {
+                    ul {
+                        width: 50%;
+                        float: left;
+                        @media #{$media-tablet} {
+                            width: $viewportSize;
+                        }
+                        + ul {
+                            @media #{$media-tablet} {
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-logo {
+                a {
+                    display: block;
+                    img {
+                        height: 60px; 
+                    }
+                }
+            }
+            .disclaimer-text {
+                margin-top: 20px;
+                p {
+                    @include font-size(12);
+                    color: darken($white, 15%);
+                    margin-bottom: 6px; 
+                    line-height: 1.16667;
+                    letter-spacing: inherit; 
+                    a {
+                        text-decoration: underline !important; 
+                        @include transition(all 0.3s ease);
+                    }
+                }
+            }
+        }
+    }
+}

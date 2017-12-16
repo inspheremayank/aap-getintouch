@@ -1,0 +1,84 @@
+/* Subscription style
+   ================================== */
+
+.subscription {
+    &__wrapper {
+        background-image: url('../images/subscriptionBg.jpg');
+        @extend .image-covered;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            @include size($viewportSize);
+            background: rgba($zblack, 0.3);
+            position: fixed;
+        }
+        .footer {
+            display: none;
+        }
+        &-content {
+            position: relative;
+            z-index: 11;
+            left: 50%;
+            @include translate(-50%, 0%); 
+            margin-top: 100px;
+            max-width: 620px;
+        }
+        &-details { 
+            max-width: 620px;
+            width: 90%;
+            height: 387px;
+            @include border-radius(1px);
+            background: rgba($zblack, 0.8) none repeat scroll 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            color: $white;
+            .content-section {
+                width: 80%;
+                margin: 0 auto;
+                text-align: center; 
+                h4 {
+                    @include font-size(20);
+                    letter-spacing: 1.5px;
+                    margin: 0 auto 35px;
+                    max-width: 60%; 
+                    line-height: 1.5;
+                    @media #{$media-tablet} {
+                        max-width: 100%;  
+                    }
+                }
+                .button {
+                    color: $white;
+                    background: $zblack none repeat scroll 0 0;
+                }
+                p {
+                    @include font-size(9); 
+                    letter-spacing: 1.5px;
+                    margin-bottom: 0px;
+                    margin-top: 8px;
+                    a {
+                        border-bottom: 1px solid $white;
+                    }
+                }
+                .form-control {
+                    @include border-radius(0);
+                }
+            }
+        }
+        &-shortData {
+            color: $white;
+            width: 60%;
+            margin: 40px auto 0;
+            @include font-size(10);
+            line-height: 1.5;
+            letter-spacing: 1px; 
+            @media #{$media-ipadLandscape}, #{$media-ipadPortrait} {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

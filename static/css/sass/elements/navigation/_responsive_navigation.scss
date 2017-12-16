@@ -1,0 +1,376 @@
+/* Page Responsive Sidebar section
+================================ */
+
+
+.navigation {
+    &__main {
+        .menu-bar {
+            cursor: pointer;
+            i {
+                @include font-size(20);
+                color: $white; 
+            }
+        }
+        &-menu {
+            display: none;
+        }
+    }
+    &__login {
+        margin-right: 30px;
+        @media #{$media-ipadSmall} {
+            margin-right: 10px;
+        }
+        &-nav {
+            a {
+                @include transition(all 0.3s ease);
+                + a {
+                    &:before {
+                        content:'|';
+                        @include padding(0 10px);
+                    }
+                }
+                &:hover, &:focus {
+                    color: $blue;
+                }
+            }
+        }
+        &-user {
+            &-image {
+                @include size(40px);
+                cursor: pointer;
+                @media #{$media-ipadSmall} {
+                    @include size(30px);
+                }
+            }
+            .dropdown-menu {
+                a {
+                    color: $blue;
+                    @include padding(0.5rem 1.5rem);
+                    &:hover, &:focus {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    &__search {
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+        position: relative;
+        min-width: 90px;
+        justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+        .label-control {
+            position: absolute;
+            z-index: 10;
+            left: 0;
+            top: 50%;
+            @include translate(0,-50%);
+            width: auto;
+        }
+        .form-control {
+            background: $white repeat scroll 0 0;
+            border: none;
+            border-bottom: 2px solid $zblack;
+            @include border-radius(0);
+            @include padding(0);
+            @include transition(all 0.3s ease);
+            width: 0px;
+            height: 40px;
+            color: $black;
+            @include font-size(14);
+            font-family: $quaternaryFont;
+            position: relative;
+            z-index: 11;
+        }
+        .button {
+            @include padding(0);
+            position: absolute;
+            right: 0;
+            top: 50%;
+            @include translate(0,-50%);
+            z-index: 12;
+            i {
+                color: $white;
+                margin: 0px;
+                @include font-size(20);
+            }
+        }
+        &.active {
+            .form-control {
+                width: 200px;
+                @include padding(8px 25px 8px 12px);
+            }
+        }
+        /* &.responsive-search {
+            display: none;
+            margin-right: 0px;
+            position: relative;
+            @include padding(0 20px);
+            margin-bottom: 15px;
+            .form-control {
+                width: $viewportSize;
+                color: $white;
+                border-color: $white; 
+            }
+            .button {
+                position: absolute;
+                z-index: 10;
+                right: 20px;
+                top: 50%;
+                @include translate(0, -50%);
+                i {
+                    color: $white; 
+                }
+            }
+            @media #{$media-ipadSmall} {
+                display: block;
+            }
+        }*/
+        &.desktop-search {
+            &.resHide {
+                @media #{$media-ipadSmall} {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* Begin responsive menu style */
+
+.responsive-standalone {
+    top: 0;
+    width: 280px;
+    height: $viewportSize;
+    /* display: none;
+    border-right: 1px solid $border; */
+    left: auto;
+    right: 0;
+    text-align: left;
+    z-index: 99999999;
+    visibility: hidden;
+    padding: 0px 0px 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    @include transition(all 0.3s ease);
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transition: translate3d(100%, 0, 0);
+    -ms-transition: translate3d(100%, 0, 0);
+    -o-transition: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    position: fixed !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background: rgba($zblack,0.8) none repeat scroll 0 0;
+
+    &.navigation-active { 
+        visibility: visible;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transition: translate3d(0, 0, 0);
+        -ms-transition: translate3d(0, 0, 0);
+        -o-transition: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    &-close {
+        top: 19px;
+        right: 280px;
+        z-index: 100;
+        position: absolute;
+        @include font-size(20);
+        padding: .5em 0.85em;
+        line-height: 1.5em;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-transform: translate3d(100%, 0, 0);
+        -moz-transition: translate3d(100%, 0, 0);
+        -ms-transition: translate3d(100%, 0, 0);
+        -o-transition: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: hidden;
+        &.open {
+            visibility: visible;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transition: translate3d(0, 0, 0);
+            -ms-transition: translate3d(0, 0, 0);
+            -o-transition: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        .close-text {
+            width: 3em;
+            float: left;
+            height: 1.5em;
+            color: $white;
+            display: block;
+            overflow: hidden;
+        }
+        .fa {
+            color: $white;
+        }
+    }
+    &-overlay {
+        display: none;
+        background: rgba($black,0.5);
+        position: fixed;
+        @include size(#{$viewportSize});
+        top: 0;
+        z-index: 10;
+        left: 0; 
+    }
+    .standalone-menu {
+        @include padding-top(20px);
+        .desktop-search {
+            justify-content: flex-end;
+            -webkit-justify-content: flex-end; 
+            margin-right: 15px;
+            .form-control {
+                border-color: $white;
+                color: $white;
+                background: none repeat scroll 0 0;
+                margin-left: 15px; 
+            }
+            .customIcons-close {
+                background-position: -361px -21px;
+            }
+            .label-control { 
+                left: auto;
+                right: 35px;
+                color: $white; 
+            }
+            &.active {
+                .form-control {
+                    width: 252px;
+                }
+                .label-control {
+                    @include opacity(0);
+                }
+            }
+        }
+        > ul {
+            margin: 0 15px;
+            li {
+                a {
+                    display: flex;
+                    @include padding(10px 0); 
+                    justify-content: flex-end;
+                    @include font-size(18);
+                    color: $white;
+                    letter-spacing: 1px; 
+                    font-family: $secondaryFont-regular;
+                    i {
+                        display: flex;
+                        align-items: center;                    
+                    }
+                    &:hover, &:focus {
+                        text-decoration: underline;
+                    }
+                }
+                .sub-menu {
+                    display: none;
+                }
+            }
+            + ul {
+                border-top: 1px solid $white;
+                margin-top: 15px;
+                @include padding-top(15px); 
+            }
+            &.small-text {
+                li { 
+                    a {
+                        @include font-size(13); 
+                    }
+                }
+            }
+        }
+        .customIcons {
+            &-search {
+                background-position: -312px -21px; 
+            }
+        }
+    }
+}
+
+/* End responsive menu style */
+
+/* Menu mobile */
+.open-menu {
+    top: 0px;
+    right: 13px;
+    bottom: 0px;
+    width: 50px;
+    height: 17px;
+    margin: auto;
+    display: none;
+    cursor: pointer;
+    z-index: 9;
+    position: absolute;
+    span {
+        position: absolute;
+        display: block;
+        font-size: 0;
+        width: 22px;
+        height: 2px;
+        background-color: $basebg;
+        margin: auto;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        &:after {
+            top: 0;
+            left: 0;
+            content: '';
+            display: block;
+            position: absolute;
+            width: $viewportSize;
+            height: 2px;
+            background-color: $white;
+            -webkit-transform: translateX(-100%);
+            -moz-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            -o-transform: translateX(-100%);
+            transform: translateX(-100%);
+            @include transition(all 0.2s linear);
+        }
+    }
+    .item-1 {
+        top: 1px;
+    }
+    .item-2 {
+        top: 0;
+        bottom: 0;
+        &:after {
+            -webkit-transition-delay: 0.1s;
+            -moz-transition-delay: 0.1s;
+            -ms-transition-delay: 0.1s;
+            -o-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+        }
+    }
+    .item-3 {
+        bottom: 0;
+        &:after {
+            -webkit-transition-delay: 0.2s;
+            -moz-transition-delay: 0.2s;
+            -ms-transition-delay: 0.2s;
+            -o-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+        }
+    }
+    &:hover span:after {
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+.open-menu {
+    @media #{$media-ipadPortrait} { 
+        display: block !important;
+        right: 0px; 
+    }
+}
