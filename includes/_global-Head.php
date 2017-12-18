@@ -3,7 +3,7 @@
 ?>
 
 <!doctype html>
-<html class="no-js">
+<html lang="en">
 <!-- Begin Global Header -->
 <head>
     <meta charset="utf-8" />
