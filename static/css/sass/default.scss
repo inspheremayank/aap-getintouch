@@ -65,6 +65,9 @@ ul li, ol li {
 .aboutProduct__section {
     background: $white none repeat scroll 0 0;
     position: relative;
+    .flex-last {
+        z-index: 100;
+    }
     &-content {
         @include padding(60px 0);
         h2 {
@@ -79,14 +82,31 @@ ul li, ol li {
         }
     }
     &-image {
-        float: right;
         @include translate(0%, -50%);
         z-index: 100; 
         position: absolute;
         top: 0;
         right: 0;
+        @media #{$media-ipadPortrait} {
+            position: relative;
+            @include translate(0%, 0%);
+            display: none;
+        }
     }
-    @extend .flip-containers;
+    @media #{$media-ipadPortrait} {
+        .flex-last {
+            -webkit-box-ordinal-group: 0;
+            -webkit-order: -1;
+            -ms-flex-order: -1;
+            order: -1;
+        } 
+        .flex-first {
+            -webkit-box-ordinal-group: 2;
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
+        }
+    }
 }
 .innovation__wrapper {
     background: $white none repeat scroll 0 0;

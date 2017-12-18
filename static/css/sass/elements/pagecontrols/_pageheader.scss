@@ -63,7 +63,7 @@
                 .button {
                     @include padding(10px 16px);
                 }
-                @media #{$media-ipadPortrait} {
+                @media #{$media-ipadSmall} {
                     display: none;
                 }
             }

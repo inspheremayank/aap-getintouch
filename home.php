@@ -32,14 +32,14 @@ include("includes/_header.php");
 <div class="aboutProduct__section">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-10 m-auto">
+            <div class="col-12 col-lg-10 m-auto">
                 <div class="row">
-                    <div class="col-12 col-md-6 flex-last">
+                    <div class="col-12 col-md-6 flex-last animated fadeInUp">
                         <div class="aboutProduct__section-image">
                             <img src="static/images/mock-up.png" class="img-fluid" alt="about image" />
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 flex-first">
+                    <div class="col-12 col-lg-6 flex-first">
                         <div class="aboutProduct__section-content">
                             <h2>$50 million for Small and Regional Publishers</h2>
                             <p>The federal government is launching a $60 Million regional publishers fund in 2018 and we have built a bespoke digital publishing technology and training solution custom designed to deliver this for you. </p>
@@ -60,8 +60,8 @@ include("includes/_header.php");
             <div class="col-12 col-md-6 px-0">
                 <div class="image-withContent__wrapper-image image-covered" style="background-image: url('static/images/banner-image.jpg')"></div>
             </div>
-            <div class="col-12 col-md-6 px-0 darkBlue__bg">
-                <div class="image-withContent__wrapper-content d-flex justify-content-center align-items-start flex-column">
+            <div class="col-12 col-md-6 px-0 darkBlue__bg responsive__px0-to-10">
+                <div class="image-withContent__wrapper-content image-withContent__wrapper-content-rightContainer d-flex justify-content-center align-items-start flex-column">
                     <h3>Equip your media company for the digital age</h3>
                     <p>Cognitives.io and AAP have partnered to offer Publishers a bespoke digital publishing technology and training solution that aligns with the criteria for the new Innovation fund.</p>
                     <p>Our technology can revamp your website into a modern, audience engaging media site, while our expert team can train, implement and maintain your technology needs in the future.</p>
@@ -79,51 +79,59 @@ include("includes/_header.php");
             <div class="col-12 col-md-6 px-0 flex-last">
                 <div class="image-withContent__wrapper-image image-covered" style="background-image: url('static/images/banner-image.jpg')"></div>
             </div>
-            <div class="col-12 col-md-6 px-0 flex-first offwhite__bg">
+            <div class="col-12 col-md-6 px-0 flex-first offwhite__bg responsive__px0-to-10">
                 <div class="image-withContent__wrapper-content d-flex justify-content-center align-items-start flex-column">
-                    <ul class="listing__view">
+                    <ul class="listing__view d-flex flex-wrap">
                         <li>
-                            <div class="listing__view-icon">
-                                <span>
-                                    <img src="static/images/icons/theme/app.png" class="img-fluid" alt="App icon" />
-                                </span>
-                            </div>
-                            <div class="listing__view-content">
-                                <h3>Enterprise</h3>
-                                <p>Best in market publishing platform to run your digital newsroom</p>
+                            <div class="listing__view-container">
+                                <div class="listing__view-icon">
+                                    <span>
+                                        <img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="Enterprise icon" />
+                                    </span>
+                                </div>
+                                <div class="listing__view-content">
+                                    <h3>Enterprise</h3>
+                                    <p>Best in market publishing platform to run your digital newsroom</p>
+                                </div>
                             </div>
                         </li>
                         <li>
-                            <div class="listing__view-icon">
-                                <span>
-                                    <img src="static/images/icons/theme/app.png" class="img-fluid" alt="App icon" />
-                                </span>
-                            </div>
-                            <div class="listing__view-content">
-                                <h3>Apps</h3>
-                                <p>Create native IOS and android apps for your publication</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="listing__view-icon">
-                                <span>
-                                    <img src="static/images/icons/theme/app.png" class="img-fluid" alt="App icon" />
-                                </span>
-                            </div>
-                            <div class="listing__view-content">
-                                <h3>Training</h3>
-                                <p>Learn how to build a digital audience. We coach your team on digital media and social media best practice</p>
+                            <div class="listing__view-container">
+                                <div class="listing__view-icon">
+                                    <span>
+                                        <img src="static/images/icons/theme/app.png" class="img-fluid" alt="App icon" />
+                                    </span>
+                                </div>
+                                <div class="listing__view-content">
+                                    <h3>Apps</h3>
+                                    <p>Create native IOS and android apps for your publication</p>
+                                </div>
                             </div>
                         </li>
                         <li>
-                            <div class="listing__view-icon">
-                                <span>
-                                    <img src="static/images/icons/theme/app.png" class="img-fluid" alt="App icon" />
-                                </span>
+                            <div class="listing__view-container">
+                                <div class="listing__view-icon">
+                                    <span>
+                                        <img src="static/images/icons/theme/training.png" class="img-fluid" alt="Training icon" />
+                                    </span>
+                                </div>
+                                <div class="listing__view-content">
+                                    <h3>Training</h3>
+                                    <p>Learn how to build a digital audience. We coach your team on digital media and social media best practice</p>
+                                </div>
                             </div>
-                            <div class="listing__view-content">
-                                <h3>Revenue</h3>
-                                <p>Integrate into modern digital advertising platforms, and deploy a built-in paywall to generate revenue for your newspaper</p>
+                        </li>
+                        <li>
+                            <div class="listing__view-container">
+                                <div class="listing__view-icon">
+                                    <span>
+                                        <img src="static/images/icons/theme/revenue.png" class="img-fluid" alt="Revenue icon" />
+                                    </span>
+                                </div>
+                                <div class="listing__view-content">
+                                    <h3>Revenue</h3>
+                                    <p>Integrate into modern digital advertising platforms, and deploy a built-in paywall to generate revenue for your newspaper</p>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -148,8 +156,8 @@ include("includes/_header.php");
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 px-0 darkBlue__bg">
-                <div class="image-withContent__wrapper-content d-flex justify-content-center align-items-start flex-column">
+            <div class="col-12 col-md-6 px-0 darkBlue__bg responsive__px0-to-10">
+                <div class="image-withContent__wrapper-content image-withContent__wrapper-content-rightContainer d-flex justify-content-center align-items-start flex-column">
                     <h3>An expert partner you can trust</h3>
                     <p>We are a consortium of publishing technology companies and media providers. Our clients are rural and regional publishers, universities, and large publishers. We build and maintain media websites and apps for some of the country's biggest media brands, along with well known rural media companies throughout Australia.</p>
                     <ul class="logos-section d-flex justify-content-between align-items-center">
@@ -188,8 +196,8 @@ include("includes/_header.php");
             <div class="col-12 col-md-6 px-0">
                 <div class="image-withContent__wrapper-image image-covered" style="background-image: url('static/images/banner-image.jpg')"></div>
             </div>
-            <div class="col-12 col-md-6 px-0 offwhite__bg">
-                <div class="image-withContent__wrapper-content image-withContent__wrapper-content-blackTxt d-flex justify-content-center align-items-start flex-column">
+            <div class="col-12 col-md-6 px-0 offwhite__bg responsive__px0-to-10">
+                <div class="image-withContent__wrapper-content image-withContent__wrapper-content-rightContainer image-withContent__wrapper-content-blackTxt d-flex justify-content-center align-items-start flex-column">
                     <h3>Transform your Media Company</h3>
                     <p>Take the first step towards a digital transformation of your media company with our bespoke software, training, web development and content offering.</p>
                     <a href="javascript:;" class="upper button button-blue button-radius">Learn More</a>

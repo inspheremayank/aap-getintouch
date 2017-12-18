@@ -16,7 +16,7 @@ include("includes/_header.php");
     <div class="container-fluid">
         <div class="row justify-content-between">
             <div class="col-12 col-md-6 col-lg-5 px-0 flex-last">
-                <aside class="getForm__wrapper-image">
+                <aside class="getForm__wrapper-image animated fadeInRight">
                     <img src="static/images/laptop-image.png" class="img-fluid" alt="Laptop image" />
                 </aside>
             </div>

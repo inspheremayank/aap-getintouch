@@ -73,6 +73,12 @@
         }
     }
 }
+.responsive__px0-to-10 {
+    @media #{$media-tablet} {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
 .containerFluid-content {
     width: calc(1140px / 2 - 10px);
     float: right;
