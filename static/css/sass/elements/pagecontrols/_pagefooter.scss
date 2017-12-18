@@ -1,122 +1,85 @@
 /* Page Footer section
 ================================ */
 .footer {
-    &__top {
-        position: relative;
-        background: $zblack none repeat scroll 0 0 !important;
-/*        &:before {
-            content:'';
-            position: absolute;
-            top: 0;
-            left: 0;
-            @include size($viewportSize);
-            background: rgba($blue,0.9) none repeat scroll 0 0; 
-            z-index: 10;
-        }*/
-        &-content {
-            position: relative;
-            z-index: 11;
-            color: $white;
-            text-align: center;
-            @include padding(20px);
+    background: $white none repeat scroll 0 0;
+    @include padding(30px 0);
+    &__content {
+        @media #{$media-ipadPortrait} {
+            margin-bottom: 20px;
         }
-        h2 {
-            @include font-size(20);
-            font-family: $secondaryFont-bold !important;
-            margin: 0px !important;
-        }
-        &-listing {
-            ul {
-                line-height: 1 !important; 
-                li {
-                    display: inline-block;
-                    @include padding(20px 0 0);
-                    a {
-                        @include transition(all 0.3s ease);
-                        .customIcons {
-                            @media #{$media-phone} {
-                                margin: 0 auto;
-                            }
-                        }
-                        &:hover, &:focus {
-                            @include opacity(0.6);
-                            @include transition(all 0.3s ease);
-                        }
-                    }
-                    + li {
-                        margin-left: 25px;
-                        @media #{$media-phone} {
-                            margin-left: 0px;
-                        }
-                    }
-                    @media #{$media-phone} {
-                        width: calc(#{$viewportSize} / 4 - 4px);
+        p {
+            margin-bottom: 0px;
+            color: $grey;
+            @include font-size(12);
+            line-height: 1.5;
+            text-align: right;
+            @extend .font-regular;
+            @media #{$media-ipadPortrait} {
+                text-align: center;
+            }
+            a {
+                color: $grey;
+                @include font-size(12);
+                &:after {
+                    content: '|';
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+                &:hover, &:focus {
+                    color: $blue;
+                    &:after {
+                        color: $grey;
                     }
                 }
             }
         }
     }
-    
-    &__main {
-        @include padding(20px 0);
-        background: $zblack none repeat scroll 0 0;
-        &-content {
-            &-listing {
-                ul {
-                    line-height: 1 !important; 
-                    li {
-                        a {
-                            @include transition(all 0.3s ease);
-                            display: block;
-                            color: darken($white, 8%);
-                            @include font-size(13);
-                            letter-spacing: 1px; 
-                            &:hover, &:focus {
-                                color: $white;
-                            }
-                        }
-                        + li {
-                            margin-top: 5px;
-                        }
-                    }
-                }
-                &.multiple {
-                    ul {
-                        width: 50%;
-                        float: left;
-                        @media #{$media-tablet} {
-                            width: $viewportSize;
-                        }
-                        + ul {
-                            @media #{$media-tablet} {
-                                margin-top: 5px;
-                            }
-                        }
-                    }
-                }
+    &__logo {
+        ul {
+            overflow: hidden;
+            @media #{$media-ipadPortrait} {
+                -webkit-box-pack: justify;
+                -moz-box-pack: justify;
+                -ms-flex-pack: justify;
+                -webkit-justify-content: center;
+                justify-content: center;
             }
-            &-logo {
+            li {
+                float: left; 
+                &.logo-aap {
+                    width: 80px;
+                    @media #{$media-tablet} {
+                        width: 50px;
+                    }
+                }
+                &.logo-cognitives {
+                    width: 180px;
+                    @media #{$media-tablet} {
+                        width: 120px;
+                    }
+                }
+                + li {
+                    margin-left: 40px;
+                }
                 a {
                     display: block;
-                    img {
-                        height: 60px; 
-                    }
+                    @include transition(all 0.3s ease);
                 }
             }
-            .disclaimer-text {
-                margin-top: 20px;
-                p {
-                    @include font-size(12);
-                    color: darken($white, 15%);
-                    margin-bottom: 6px; 
-                    line-height: 1.16667;
-                    letter-spacing: inherit; 
-                    a {
-                        text-decoration: underline !important; 
-                        @include transition(all 0.3s ease);
-                    }
-                }
-            }
+        }
+    }
+    @media #{$media-ipadPortrait} {
+        .flex-last {
+            -webkit-box-ordinal-group: 0;
+            -webkit-order: -1;
+            -ms-flex-order: -1;
+            order: -1;
+        } 
+        .flex-first {
+            -webkit-box-ordinal-group: 2;
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
         }
     }
 }

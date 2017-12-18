@@ -1,0 +1,19 @@
+/* banner section
+================================ */
+.banner__section {
+    height: calc(100vh - 98px);
+    position: relative;
+    &:after {
+        content: '';
+        z-index: 99;
+        @include linear-gradient(rgba(25, 44, 84, 0.2), $zblack);
+        @include size(#{$viewportSize});
+        position: absolute;
+        top: 0;
+        left: 0; 
+    }
+    &-content {
+        position: relative;
+        z-index: 100;
+    }
+}

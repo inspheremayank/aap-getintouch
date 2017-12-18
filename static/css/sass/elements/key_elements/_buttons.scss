@@ -5,13 +5,17 @@
     outline: none;
     background: none;
     cursor: pointer;
-    @include padding(10px 16px);
+    @include padding(17px 25px);
     display: inline-block;
     border: 1px solid $transparent;
-    @include font-size();
+    @include font-size(14); 
     line-height: 1;
     letter-spacing: 1.4px; 
-    @include transition(all 0.3s ease); 
+    @include transition(all 0.3s ease);
+    font-family: $primary-fonts-medium;
+    &-small {
+        @include padding(10px 16px);
+    }
     &-block {
         width: $viewportSize;
         display: block;
@@ -48,6 +52,15 @@
         &:hover, &:focus {
             background: lighten($blue, 8%) none repeat scroll 0 0;
             border-color: lighten($blue, 8%);
+        }
+    }
+    &-red {
+        background: $red none repeat scroll 0 0;
+        color: $white !important;
+        border-color: $red;
+        &:hover, &:focus {
+            background: darken($red, 8%) none repeat scroll 0 0;
+            border-color: darken($red, 8%); 
         }
     }
     i {

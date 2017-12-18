@@ -9,76 +9,27 @@
 
 
 /* Open Sans Font */
-$robotocondensed:                       'Roboto Condensed', Arial, sans-serif;
-$texgyrescholaregular:                  'texgyrescholaregular', Arial, sans-serif;
-$texgyrescholabold:                     'texgyrescholabold', Arial, sans-serif;
-$CenturySchoolbookRegular:              'CenturySchoolbook-Regular', Arial, sans-serif;
-$CenturySchoolbookBold:                 'CenturySchoolbook-Bold', Arial, sans-serif;
-$nimbusSansCondensed:                   'nimbus-sans-condensed', Arial, sans-serif;
-$roboto:                                'Roboto', Arial, sans-serif;
+$primary-fonts-light:                    'RalewayLight', Arial, sans-serif;
+$primary-fonts-regular:                  'RalewayRegular', Arial, sans-serif;
+$primary-fonts-medium:                   'RalewayMedium', Arial, sans-serif;
+$primary-fonts-semiBold:                 'RalewaySemiBold', Arial, sans-serif;
+$primary-fonts-bold:                     'RalewayBold', Arial, sans-serif;
+$primary-fonts-black:                    'RalewayBlack', Arial, sans-serif;
 
 
 
 $iconfont:	 			'FontAwesome';
-$illustrationfont: 			'insphere-icons';
 
-.is {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: $illustrationfont;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
 // Font Sizing
 // ================================
-$baseFontSize:                          1rem;
+$baseFontSize:                          0.875rem;
 
 
 $uppercase:                             uppercase;
 
 // Styles
 // ================================
-
-/* Primary Fonts Style */
-$primaryFont:                           $nimbusSansCondensed;
-/*$primaryFont-thin:                      $montserrathairline;
-$primaryFont-light:                     $montserratlight;
-$primaryFont-regular:                   $montserratregular;
-$primaryFont-medium:                    $montserratregular;
-$primaryFont-semibold:                  $montserratsemibold;
-$primaryFont-bold:                      $montserratbold;
-$primaryFont-black:                     $montserratregular;*/
-
-/* Secondary Fonts Style */
-$secondaryFont-regular:                 $CenturySchoolbookRegular;
-$secondaryFont-bold:                    $CenturySchoolbookBold; 
-/*$secondaryFont-thin:                    $montserratregular;
-$secondaryFont-light:                   $robotolight;
-$secondaryFont-regular:                 $robotoregular;
-$secondaryFont-medium:                  $robotomedium;
-$secondaryFont-semibold:                $montserratregular;
-$secondaryFont-bold:                    $texgyrescholabold;
-$secondaryFont-black:                   $robotoblack;*/
-
-/* Ternary Fonts Style */
-$ternaryFont-regular:                   $robotocondensed;
-/* $ternaryFont-thin:                      $montserratregular; 
-$ternaryFont-light:                     $montserratregular;
-$ternaryFont-regular:                   $rubikregular;
-$ternaryFont-medium:                    $rubikmedium;
- $ternaryFont-semibold:                  $montserratregular; 
-$ternaryFont-bold:                      $rubikbold;
-$ternaryFont-black:                     $rubikblack;*/
-
-$quaternaryFont:                        $roboto;
 
 $weightLight:                           300;
 $weightRegular:                         400;
@@ -111,7 +62,7 @@ $w900:					900!important;
 // Defaults
 // ================================
 html, body {
-    font-family: 		$quaternaryFont;
+    font-family: 		$primary-fonts-light;
     font-size:                  $baseFontSize;
     color: 			$greyish;
 }
@@ -119,16 +70,19 @@ html, body {
 // Headings
 // ================================
 h1, h2, h3 {
-    font-family: $secondaryFont-bold;
+    font-family: $primary-fonts-regular;
 }
 h4, h5, h6 {
-    font-family: $secondaryFont-regular;
+    font-family: $primary-fonts-light;
 }
 .form-section h2{
-    font-family: $secondaryFont-bold;
+    font-family: $primary-fonts-regular;
 }
 .header-heading {
     margin-bottom: 15px; 
+}
+.font-regular {
+    font-family: $primary-fonts-regular;
 }
 
 
@@ -272,4 +226,4 @@ q {
 63px 	3.9375rem
 64px 	4rem
 
-*/
+*/ 

@@ -1,75 +1,63 @@
 /* Global Fonts Path
    ================================== */
 
-$fonts-roboto-path:        "../fonts/roboto-condensed";
-$fonts-texgyreschola-path: "../fonts/texgyreschola";
-$fonts-centurySchool-path: "../fonts/century-school";
+$primary-fonts:        "../fonts/raleway";
 
 /* Roboto Font */
 @font-face {
-    font-family: 'RobotoCondensedLight';
-    src: url('#{$fonts-roboto-path}/RobotoCondensedLight.eot');
-    src: url('#{$fonts-roboto-path}/RobotoCondensedLight.eot') format('embedded-opentype'),
-         url('#{$fonts-roboto-path}/RobotoCondensedLight.woff2') format('woff2'),
-         url('#{$fonts-roboto-path}/RobotoCondensedLight.woff') format('woff'),
-         url('#{$fonts-roboto-path}/RobotoCondensedLight.ttf') format('truetype'),
-         url('#{$fonts-roboto-path}/RobotoCondensedLight.svg#RobotoCondensedLight') format('svg');
+    font-family: 'RalewayLight';
+    src: url('#{$primary-fonts}/RalewayLight.eot');
+    src: url('#{$primary-fonts}/RalewayLight.eot') format('embedded-opentype'),
+         url('#{$primary-fonts}/RalewayLight.woff2') format('woff2'),
+         url('#{$primary-fonts}/RalewayLight.woff') format('woff'),
+         url('#{$primary-fonts}/RalewayLight.ttf') format('truetype'),
+         url('#{$primary-fonts}/RalewayLight.svg#RalewayLight') format('svg');
+}
+@font-face {
+    font-family: 'RalewayRegular';
+    src: url('#{$primary-fonts}/RalewayRegular.eot');
+    src: url('#{$primary-fonts}/RalewayRegular.eot') format('embedded-opentype'),
+         url('#{$primary-fonts}/RalewayRegular.woff2') format('woff2'),
+         url('#{$primary-fonts}/RalewayRegular.woff') format('woff'),
+         url('#{$primary-fonts}/RalewayRegular.ttf') format('truetype'),
+         url('#{$primary-fonts}/RalewayRegular.svg#RalewayRegular') format('svg');
 }
 
 @font-face {
-    font-family: 'RobotoCondensedRegular';
-    src: url('#{$fonts-roboto-path}/RobotoCondensedRegular.eot');
-    src: url('#{$fonts-roboto-path}/RobotoCondensedRegular.eot') format('embedded-opentype'),
-         url('#{$fonts-roboto-path}/RobotoCondensedRegular.woff2') format('woff2'),
-         url('#{$fonts-roboto-path}/RobotoCondensedRegular.woff') format('woff'),
-         url('#{$fonts-roboto-path}/RobotoCondensedRegular.ttf') format('truetype'),
-         url('#{$fonts-roboto-path}/RobotoCondensedRegular.svg#RobotoCondensedRegular') format('svg');
+    font-family: 'RalewayMedium';
+    src: url('#{$primary-fonts}/RalewayMedium.eot');
+    src: url('#{$primary-fonts}/RalewayMedium.eot') format('embedded-opentype'),
+         url('#{$primary-fonts}/RalewayMedium.woff2') format('woff2'),
+         url('#{$primary-fonts}/RalewayMedium.woff') format('woff'),
+         url('#{$primary-fonts}/RalewayMedium.ttf') format('truetype'),
+         url('#{$primary-fonts}/RalewayMedium.svg#RalewayMedium') format('svg');
 }
 @font-face {
-    font-family: 'RobotoCondensedBold';
-    src: url('#{$fonts-roboto-path}/RobotoCondensedBold.eot');
-    src: url('#{$fonts-roboto-path}/RobotoCondensedBold.eot') format('embedded-opentype'),
-         url('#{$fonts-roboto-path}/RobotoCondensedBold.woff2') format('woff2'),
-         url('#{$fonts-roboto-path}/RobotoCondensedBold.woff') format('woff'),
-         url('#{$fonts-roboto-path}/RobotoCondensedBold.ttf') format('truetype'),
-         url('#{$fonts-roboto-path}/RobotoCondensedBold.svg#RobotoCondensedBold') format('svg');
-}
-
-/* texgyreschola Font */
-
-@font-face {
-    font-family: 'texgyrescholaregular';
-    src: url('#{$fonts-texgyreschola-path}/texgyrescholaregular.eot');
-    src: url('#{$fonts-texgyreschola-path}/texgyrescholaregular.eot') format('embedded-opentype'),
-         url('#{$fonts-texgyreschola-path}/texgyrescholaregular.woff2') format('woff2'),
-         url('#{$fonts-texgyreschola-path}/texgyrescholaregular.woff') format('woff'),
-         url('#{$fonts-texgyreschola-path}/texgyrescholaregular.ttf') format('truetype'),
-         url('#{$fonts-texgyreschola-path}/texgyrescholaregular.svg#texgyrescholaregular') format('svg');
+    font-family: 'RalewaySemiBold';
+    src: url('#{$primary-fonts}/RalewaySemiBold.eot');
+    src: url('#{$primary-fonts}/RalewaySemiBold.eot') format('embedded-opentype'),
+         url('#{$primary-fonts}/RalewaySemiBold.woff2') format('woff2'),
+         url('#{$primary-fonts}/RalewaySemiBold.woff') format('woff'),
+         url('#{$primary-fonts}/RalewaySemiBold.ttf') format('truetype'),
+         url('#{$primary-fonts}/RalewaySemiBold.svg#RalewaySemiBold') format('svg');
 }
 @font-face {
-    font-family: 'texgyrescholabold';
-    src: url('#{$fonts-texgyreschola-path}/texgyrescholabold.eot');
-    src: url('#{$fonts-texgyreschola-path}/texgyrescholabold.eot') format('embedded-opentype'),
-         url('#{$fonts-texgyreschola-path}/texgyrescholabold.woff2') format('woff2'),
-         url('#{$fonts-texgyreschola-path}/texgyrescholabold.woff') format('woff'),
-         url('#{$fonts-texgyreschola-path}/texgyrescholabold.ttf') format('truetype'),
-         url('#{$fonts-texgyreschola-path}/texgyrescholabold.svg#texgyrescholabold') format('svg');
-}
-
-/* Century School font */
-@font-face {
-    font-family: 'CenturySchoolbook-Regular';
-    src: url('#{$fonts-centurySchool-path}/CenturySchoolbook-Regular-webfont.woff2') format('woff2'),
-         url('#{$fonts-centurySchool-path}/CenturySchoolbook-Regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+    font-family: 'RalewayBold';
+    src: url('#{$primary-fonts}/RalewayBold.eot');
+    src: url('#{$primary-fonts}/RalewayBold.eot') format('embedded-opentype'),
+         url('#{$primary-fonts}/RalewayBold.woff2') format('woff2'),
+         url('#{$primary-fonts}/RalewayBold.woff') format('woff'),
+         url('#{$primary-fonts}/RalewayBold.ttf') format('truetype'),
+         url('#{$primary-fonts}/RalewayBold.svg#RalewayBold') format('svg');
 }
 @font-face {
-    font-family: 'CenturySchoolbook-Bold';
-    src: url('#{$fonts-centurySchool-path}/CenturySchoolbook-Bold-webfont.woff2') format('woff2'),
-         url('#{$fonts-centurySchool-path}/CenturySchoolbook-Bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+    font-family: 'RalewayBlack';
+    src: url('#{$primary-fonts}/RalewayBlack.eot');
+    src: url('#{$primary-fonts}/RalewayBlack.eot') format('embedded-opentype'),
+         url('#{$primary-fonts}/RalewayBlack.woff2') format('woff2'),
+         url('#{$primary-fonts}/RalewayBlack.woff') format('woff'),
+         url('#{$primary-fonts}/RalewayBlack.ttf') format('truetype'),
+         url('#{$primary-fonts}/RalewayBlack.svg#RalewayBlack') format('svg');
 }
+
+

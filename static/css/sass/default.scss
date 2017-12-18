@@ -26,9 +26,9 @@ body {
 }
 body {
     height: auto; 
-    background:$white none repeat scroll 0 0;
-    color: $baseColor;
-    font-family: $quaternaryFont !important;
+    background:$defaultbg none repeat scroll 0 0;
+    color: $white;
+    font-family: $primary-fonts-light;
     font-weight: $weightRegular;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -36,7 +36,45 @@ body {
 ul li, ol li {
     font-weight: $weightRegular;
 }
-
+.getForm__wrapper {
+    position: relative;
+    width: $viewportSize;
+    @include padding(6rem 0 8rem);
+    min-height: calc(100vh - 100px); 
+    &-form {
+        .title {
+            @include font-size(38);
+            margin: 15px 0;
+        }
+        .form-fields {
+            margin-top: 60px;
+        }
+    }
+    &-image {
+        float: right;
+        @include padding-left(30px); 
+    }
+    @media #{$media-ipadSmall} {
+        .flex-last {
+            -webkit-box-ordinal-group: 0;
+            -webkit-order: -1;
+            -ms-flex-order: -1;
+            order: -1;
+        } 
+        .flex-first {
+            -webkit-box-ordinal-group: 2;
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
+        }
+    }
+    @media #{$media-tablet} {
+        .flex-first {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+    }
+}
 /* End Basic Coding
    ================================ */
 
@@ -49,28 +87,11 @@ ul li, ol li {
 
 @import 'elements/key_elements/buttons';
 @import 'elements/key_elements/form';
+@import 'elements/key_elements/banner';
 @import 'elements/pagecontrols/pageheader'; 
 @import 'elements/pagecontrols/pagefooter';
 
-@import 'elements/navigation/responsive_navigation';
-@import 'elements/key_elements/cards';
-@import 'elements/key_elements/layout';
-@import 'elements/key_elements/tab_view';
-@import 'elements/key_elements/banner_section';
-@import 'elements/key_elements/articles';
-@import 'elements/key_elements/articles-slideWindow';
-@import 'elements/key_elements/channel_overview'; 
-@import 'elements/key_elements/account-modal';
-@import 'elements/key_elements/search';
-@import 'elements/key_elements/blog';
-@import 'elements/key_elements/contact';
-@import 'elements/key_elements/modal';
 @import 'elements/dependencies_Breakup';
 
 /* Pages Includes
    ================================ */
-
-@import 'pages/section';
-@import 'pages/user-profile';
-@import 'pages/blog';  
-@import 'pages/subscription';

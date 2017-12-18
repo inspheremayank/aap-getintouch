@@ -57,6 +57,40 @@
         }
     }
 }
+.containerFluid-content {
+    width: calc(1140px / 2 - 10px);
+    float: right;
+    @media #{$media-desktop} {
+        width: calc(960px / 2 - 10px);
+    }
+    @media #{$media-ipadPortrait} {
+        width: calc(720px / 2 - 10px);
+    } 
+    @media #{$media-ipadSmall} {
+        width: 100%;
+        max-width: calc(540px - 20px);
+        float: none;
+        margin: 0 auto;
+    }
+}
+.flex-unordered {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+}
+.flex-first {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+}
+.flex-last {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
 .page__body {
     @include padding(120px 0 80px);
 }
@@ -99,7 +133,7 @@
             h1,h2, h3 { 
                 @include font-size(30);
                 letter-spacing: 2px;
-                font-family: $secondaryFont-regular;
+                font-family: $primary-fonts-regular;
             }
             h3 { 
                 @include font-size(24); 
