@@ -13,7 +13,7 @@ include("includes/_header.php");
 ?>
 <div class="clearfix"></div>
 <!-- Begin about Banner section markup -->
-<div class="banner__section image-covered text-center" style="background-image: url('static/images/banner-image.jpg')">
+<div class="banner__section image-covered text-center" style="background-image: url('http://via.placeholder.com/2000x1000')">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -31,21 +31,17 @@ include("includes/_header.php");
 <!-- Begin about content section markup -->
 <div class="aboutProduct__section">
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-10 m-auto">
-                <div class="row">
-                    <div class="col-12 col-md-6 flex-last animated fadeInUp">
-                        <div class="aboutProduct__section-image">
-                            <img src="static/images/mock-up.png" class="img-fluid" alt="about image" />
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6 flex-first">
-                        <div class="aboutProduct__section-content">
-                            <h2>$50 million for Small and Regional Publishers</h2>
-                            <p>The federal government is launching a $60 Million regional publishers fund in 2018 and we have built a bespoke digital publishing technology and training solution custom designed to deliver this for you. </p>
-                            <a href="javascript:;" class="upper button button-red button-radius">Get in touch</a>
-                        </div>
-                    </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-5 flex-last animated fadeInUp">
+                <div class="aboutProduct__section-image">
+                    <img src="http://via.placeholder.com/300x550" class="img-fluid" alt="about image" />
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 flex-first">
+                <div class="aboutProduct__section-content">
+                    <h2>$50 million for Small and Regional Publishers</h2>
+                    <p>The federal government is launching a $60 Million regional publishers fund in 2018 and we have built a bespoke digital publishing technology and training solution custom designed to deliver this for you. </p>
+                    <a href="javascript:;" class="upper button button-red button-radius">Get in touch</a>
                 </div>
             </div>
         </div>
@@ -58,7 +54,7 @@ include("includes/_header.php");
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 px-0">
-                <div class="image-withContent__wrapper-image image-covered" style="background-image: url('static/images/banner-image.jpg')"></div>
+                <div class="image-withContent__wrapper-image image-covered" style="background-image: url('http://via.placeholder.com/2000x1000')"></div>
             </div>
             <div class="col-12 col-md-6 px-0 darkBlue__bg responsive__px0-to-10">
                 <div class="image-withContent__wrapper-content image-withContent__wrapper-content-rightContainer d-flex justify-content-center align-items-start flex-column">
@@ -77,7 +73,7 @@ include("includes/_header.php");
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 px-0 flex-last">
-                <div class="image-withContent__wrapper-image image-covered" style="background-image: url('static/images/banner-image.jpg')"></div>
+                <div class="image-withContent__wrapper-image image-covered" style="background-image: url('http://via.placeholder.com/2000x1000')"></div>
             </div>
             <div class="col-12 col-md-6 px-0 flex-first offwhite__bg responsive__px0-to-10">
                 <div class="image-withContent__wrapper-content d-flex justify-content-center align-items-start flex-column">
@@ -86,7 +82,7 @@ include("includes/_header.php");
                             <div class="listing__view-container">
                                 <div class="listing__view-icon">
                                     <span>
-                                        <img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="Enterprise icon" />
+                                        <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="Enterprise icon" />
                                     </span>
                                 </div>
                                 <div class="listing__view-content">
@@ -99,7 +95,7 @@ include("includes/_header.php");
                             <div class="listing__view-container">
                                 <div class="listing__view-icon">
                                     <span>
-                                        <img src="static/images/icons/theme/app.png" class="img-fluid" alt="App icon" />
+                                        <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="App icon" />
                                     </span>
                                 </div>
                                 <div class="listing__view-content">
@@ -112,7 +108,7 @@ include("includes/_header.php");
                             <div class="listing__view-container">
                                 <div class="listing__view-icon">
                                     <span>
-                                        <img src="static/images/icons/theme/training.png" class="img-fluid" alt="Training icon" />
+                                        <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="Training icon" />
                                     </span>
                                 </div>
                                 <div class="listing__view-content">
@@ -125,7 +121,7 @@ include("includes/_header.php");
                             <div class="listing__view-container">
                                 <div class="listing__view-icon">
                                     <span>
-                                        <img src="static/images/icons/theme/revenue.png" class="img-fluid" alt="Revenue icon" />
+                                        <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="Revenue icon" />
                                     </span>
                                 </div>
                                 <div class="listing__view-content">
@@ -147,7 +143,7 @@ include("includes/_header.php");
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 px-0">
-                <div class="image-withContent__wrapper-image video image-covered" style="background-image: url('static/images/banner-image.jpg')">
+                <div class="image-withContent__wrapper-image video image-covered" style="background-image: url('http://via.placeholder.com/2000x1000')">
                     <div class="video-title">
                         <a href="javascript:;" class="d-flex align-items-center justify-content-center">
                             <span class="icon"></span>
@@ -179,9 +175,32 @@ include("includes/_header.php");
 <div class="innovation__wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-10 m-auto">
+                <div class="innovation__wrapper-heading m-auto text-center">
+                    <h3>What is the Regional and Small Publishers Innovation Fund?</h3>
+                    <p>The recent media law reforms passed with an inclusion of a $50 million grant for regional and small publishers to help them adapt to the changing media landscape and better serve their communities. </p>
+                </div>
                 <div class="innovation__wrapper-image text-center">
-                    <img src="static/images/innovation-fund-group.png" class="img-fluid" alt="innovation funds" />
+                    <img src="http://via.placeholder.com/2000x1000" class="img-fluid" alt="innovation funds" />
+                </div>
+                <div class="innovation__wrapper-listing">
+                    <ul class="innovation__list d-flex flex-wrap justify-content-between">
+                        <li>
+                            <div class="title">Do I Qualify?</div>
+                            <div class="content">Any publisher with at least $300,000 and  not more than $30 Million in annual revenue can apply for grants from the fund. There are other qualifying points - that can be read through here - ACMA Link</div>
+                        </li>
+                        <li>
+                            <div class="title">How will it work?</div>
+                            <div class="content">Publishers can apply for grants to fund projects that include purchasing/upgrading equipment or software, the development of apps, business activities to drive revenue/readership and training. Funding of staff via salaries is not permitted.</div>
+                        <li>
+                            <div class="title">What is available?</div>
+                            <div class="content">Each year $16.7 Million in grants is available to small and regional publishers to invest in programs that help them deliver quality independent journalism to their communities.</div>
+                        </li>
+                        <li>
+                            <div class="title">Our solution</div>
+                            <div class="content">Update me Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud xercitation ullamco laboris nisi ut aliquip ex ea commod.</div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -194,7 +213,7 @@ include("includes/_header.php");
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 px-0">
-                <div class="image-withContent__wrapper-image image-covered" style="background-image: url('static/images/banner-image.jpg')"></div>
+                <div class="image-withContent__wrapper-image image-covered" style="background-image: url('http://via.placeholder.com/2000x1000')"></div>
             </div>
             <div class="col-12 col-md-6 px-0 offwhite__bg responsive__px0-to-10">
                 <div class="image-withContent__wrapper-content image-withContent__wrapper-content-rightContainer image-withContent__wrapper-content-blackTxt d-flex justify-content-center align-items-start flex-column">

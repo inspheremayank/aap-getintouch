@@ -80,8 +80,20 @@
     }
 }
 .containerFluid-content {
-    width: calc(1140px / 2 - 10px);
+    width: calc(1320px / 2 - 10px); 
     float: right;
+    &-left {
+        float: left;
+    }
+    &-margin100 {
+        width: calc(1320px / 2 - 100px);
+        @media (max-width: 1320px) {
+            width: calc(1140px / 2 - 100px);
+        }
+    }
+    @media (max-width: 1320px) {
+        width: calc(1140px / 2 - 10px);
+    }
     @media #{$media-desktop} {
         width: calc(960px / 2 - 10px);
     }
@@ -93,13 +105,7 @@
         max-width: calc(540px - 20px);
         float: none;
         margin: 0 auto;
-    }
-    &-left {
-        float: left;
-    }
-    &-margin100 {
-        width: calc(1140px / 2 - 100px);
-    }
+    }    
 }
 .flip-containers {
     @media #{$media-ipadSmall} {

@@ -62,7 +62,7 @@ $w900:					900!important;
 // Defaults
 // ================================
 html, body {
-    font-family: 		$primary-fonts-light;
+    font-family: 		$primary-fonts-regular;
     font-size:                  $baseFontSize;
     color: 			$greyish;
 }
@@ -73,7 +73,7 @@ h1, h2, h3 {
     font-family: $primary-fonts-regular;
 }
 h4, h5, h6 {
-    font-family: $primary-fonts-light;
+    font-family: $primary-fonts-regular;
 }
 .form-section h2{
     font-family: $primary-fonts-regular;
@@ -81,8 +81,14 @@ h4, h5, h6 {
 .header-heading {
     margin-bottom: 15px; 
 }
+.font-light {
+    font-family: $primary-fonts-light;
+}
 .font-regular {
     font-family: $primary-fonts-regular;
+}
+.font-medium {
+    font-family: $primary-fonts-medium;
 }
 .font-semiBold {
     font-family: $primary-fonts-semiBold;

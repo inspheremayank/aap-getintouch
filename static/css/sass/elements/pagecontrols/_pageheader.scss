@@ -43,6 +43,9 @@
                 text-align: center;
                 margin-top: 15px;
             }
+            a {
+                @extend .font-bold;
+            }
         }
     }
     &__fixed {

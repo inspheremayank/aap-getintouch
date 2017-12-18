@@ -15,23 +15,26 @@
     &-content {
         position: relative;
         z-index: 100;
-        max-width: 600px;
+        max-width: 650px;
         width: 90%;
         height: calc(100vh - 98px);
         h1 {
-            @include font-size(50);
+            @include font-size(55);
             line-height: 1.3 !important;
+            @extend .font-light;
             @media #{$media-tablet} {
                 @include font-size(30);
             }
         }
         p {
+            @include font-size(17);
             @include padding(0 20px);
+            @extend .font-medium;
             margin-top: 30px;
         }
         .button {
-            margin-top: 80px;
-            @media #{$media-tablet} {
+            margin-top: 100px;
+            @media #{$media-ipadSmall} {
                 margin-top: 40px;
             }
         }

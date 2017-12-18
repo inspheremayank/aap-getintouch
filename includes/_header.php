@@ -20,7 +20,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <aside class="header__section-right">
-                    <a href="javascript:;" class="button upper button-radius button-red">Get in touch</a>
+                    <a href="index.php" class="button upper button-radius button-red">Get in touch</a>
                 </aside>
             </div>
         </div>

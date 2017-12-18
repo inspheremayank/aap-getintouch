@@ -17,11 +17,11 @@ include("includes/_header.php");
         <div class="row justify-content-between">
             <div class="col-12 col-md-6 col-lg-5 px-0 flex-last">
                 <aside class="getForm__wrapper-image">
-                    <img src="static/images/laptop-image.png" class="img-fluid" alt="Laptop image" />
+                    <img src="http://via.placeholder.com/800x800" class="img-fluid" alt="Laptop image" />
                 </aside>
             </div>
             <div class="col-12 col-md-6 px-0 flex-first">
-                <aside class="getForm__wrapper-form containerFluid-content">
+                <aside class="getForm__wrapper-form containerFluid-content containerFluid-content-margin100">
                     <h1 class="title">Get in touch</h1>
                     <p>A member of the team will be in touch to find out how you can best leverage the Small and Regional publishers innovation fund in 2018.</p>
                     <div class="form-fields">
@@ -37,7 +37,7 @@ include("includes/_header.php");
                             <label for="phone" class="sr-only">Phone</label>
                             <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone number" />
                         </div>
-                        <button class="button upper button-radius button-red">let's go</button>
+                        <button onclick="window.location.href='/home.php'" class="button upper button-radius button-red">let's go</button>
                     </div>
                 </aside>
             </div>

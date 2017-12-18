@@ -26,8 +26,8 @@
                 left: 60px;
                 width: 80%;
                 max-width: 300px;
-                @media #{$media-tablet} {
-                    left: 20px;  
+                @media #{$media-ipadPortrait} {
+                    left: 20px;
                 }
                 .icon {
                     @include size(55px);
@@ -65,12 +65,17 @@
             }
         }
         h3 {
-            @include font-size(36);
-            @extend .font-regular; 
+            @include font-size(38); 
+            @extend .font-medium;
+            line-height: 1.32;
+            margin-bottom: 15px;
         }
         p {
-            @include font-size(14);
-            margin-top: 15px;
+            @include font-size(17);
+            @extend .font-regular;
+        }
+        .button {
+            margin-top: 20px;
         }
         .listing__view {
             @media #{$media-ipadSmall} {
@@ -79,9 +84,13 @@
             li {
                 width: 50%; 
                 color: $zblack;
-                @media #{$media-ipadSmall} {
+                margin-bottom: 40px;
+                @media #{$media-ipadPortrait} {
                     width: $viewportSize;
-                    margin-bottom: 15px;
+                    margin-bottom: 25px;
+                    &:first-child {
+                        margin-top: 25px;
+                    }
                 }
             }
             &-container {
@@ -90,15 +99,16 @@
             }
             &-content {
                 margin-left: 15px;
+                width: calc(#{$viewportSize} - 45px);
                 h3 {
-                    @extend .font-semiBold;
+                    @extend .font-bold;
                     @include font-size(20);
-                    line-height: 1.4 !important;
-                    margin-bottom: 10px;
+                    line-height: 1.5 !important;
+                    margin-bottom: 8px;
                 }
                 p {
-                    margin-top: 0px;
-                    @extend .font-regular;
+                    @include font-size(15);
+                    @extend .font-medium;
                 }
             }
         }
@@ -113,12 +123,24 @@
                 &.cognitives { 
                     width: 200px;
                 }
+                @media #{$media-ipadPortrait} {
+                    width: 100px;
+                    &.cognitives { 
+                        width: 150px;
+                    }
+                }
             }
         }
         @extend .containerFluid-content;
         &-rightContainer {
             @extend .containerFluid-content-left;
-            @include padding(10px 10px 10px 90px);
+            @include padding(10px 60px 10px 90px);
+            @media (max-width: 1320px) {
+                @include padding(10px 10px 10px 90px);
+            }
+            @media #{$media-ipadPortrait} {
+                @include padding(10px 10px 10px 40px);
+            }
             @media #{$media-ipadSmall} {
                 @include padding(50px 10px 40px 0px);
                 float: none !important;

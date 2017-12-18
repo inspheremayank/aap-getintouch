@@ -39,15 +39,25 @@ ul li, ol li {
 .getForm__wrapper {
     position: relative;
     width: $viewportSize;
-    @include padding(6rem 0 8rem);
+    @include padding(130px 0 160px);
     min-height: calc(100vh - 198px); 
     &-form {
+        padding-right: 40px;
         .title {
             @include font-size(38);
-            margin: 15px 0;
+            line-height: 1 !important;
+            margin-bottom: 16px;
+            @extend .font-medium;
+        }
+        p {
+            @include font-size(15);
+            @extend .font-medium;
         }
         .form-fields {
             margin-top: 60px;
+        }
+        .button {
+            margin-top: 30px;
         }
     }
     &-image {
@@ -69,16 +79,18 @@ ul li, ol li {
         z-index: 100;
     }
     &-content {
-        @include padding(60px 0);
+        @include padding(80px 0);
         h2 {
             @include font-size(38);
             color: $zblack;
-            @extend .font-regular;
+            @extend .font-medium;
+            line-height: 1.32 !important;
+            margin-bottom: 28px;
         }
         p {
             @include font-size(17);
             color: $zblack;
-            margin-top: 15px;
+            margin-bottom: 43px;
         }
     }
     &-image {
@@ -110,6 +122,54 @@ ul li, ol li {
 }
 .innovation__wrapper {
     background: $white none repeat scroll 0 0;
+    &-heading {
+        color: $zblack;
+        max-width: 85%;
+        @include padding-top(54px);
+        overflow: hidden;
+        h3 {
+            @include font-size(28);
+            @extend .font-bold;
+        }
+        p {
+            @include font-size(17);
+            @extend .font-regular;
+            margin-top: 17px;
+        }
+    }
+    &-image {
+        margin-top: 22px;
+    }
+    &-listing {
+        @include padding(65px 0 30px);
+        .innovation__list {
+            li {
+                width: 40%;
+                color: $zblack;
+                margin-bottom: 40px;
+                @media #{$media-ipadSmall} {
+                    width: $viewportSize;
+                    margin-bottom: 25px;
+                }
+            }
+            .title {
+                @include font-size(28);
+                line-height: 1.5;
+                @extend .font-bold;
+                margin-bottom: 10px;
+            }
+            .content {
+                @include font-size(15);
+                line-height: 1.73;
+                @extend .font-medium; 
+            }
+        }
+    }
+}
+@media (min-width:1321px) {
+    .container {
+        max-width: 1320px !important;
+    }
 }
 /* End Basic Coding
    ================================ */
