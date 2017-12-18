@@ -54,6 +54,15 @@
             border-color: lighten($blue, 8%);
         }
     }
+    &-darkBlue {
+        background: $darkBlue none repeat scroll 0 0;
+        color: $white !important;
+        border-color: $darkBlue;
+        &:hover, &:focus {
+            background: lighten($darkBlue, 8%) none repeat scroll 0 0;
+            border-color: lighten($darkBlue, 8%);
+        }
+    }
     &-red {
         background: $red none repeat scroll 0 0;
         color: $white !important;

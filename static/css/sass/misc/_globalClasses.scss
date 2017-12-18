@@ -20,12 +20,28 @@
         color: $white !important;
     }
 }
+.offwhite {
+    &__bg { 
+        background: $offwhite !important;
+    }
+    &__color {
+        color: $offwhite !important;
+    }
+}
 .red {
     &__bg {
         background: $red !important;
     }
     &__color {
         color: $red !important;
+    }
+}
+.darkBlue {
+    &__bg {
+        background: $darkBlue !important;
+    }
+    &__color {
+        color: $darkBlue !important;
     }
 }
 .badge, .label {
@@ -71,6 +87,28 @@
         max-width: calc(540px - 20px);
         float: none;
         margin: 0 auto;
+    }
+    &-left {
+        float: left;
+    }
+    &-margin100 {
+        width: calc(1140px / 2 - 100px);
+    }
+}
+.flip-containers {
+    @media #{$media-ipadSmall} {
+        .flex-last {
+            -webkit-box-ordinal-group: 0;
+            -webkit-order: -1;
+            -ms-flex-order: -1;
+            order: -1;
+        } 
+        .flex-first {
+            -webkit-box-ordinal-group: 2;
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
+        }
     }
 }
 .flex-unordered {

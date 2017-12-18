@@ -54,26 +54,39 @@ ul li, ol li {
         float: right;
         @include padding-left(30px); 
     }
-    @media #{$media-ipadSmall} {
-        .flex-last {
-            -webkit-box-ordinal-group: 0;
-            -webkit-order: -1;
-            -ms-flex-order: -1;
-            order: -1;
-        } 
-        .flex-first {
-            -webkit-box-ordinal-group: 2;
-            -webkit-order: 1;
-            -ms-flex-order: 1;
-            order: 1;
-        }
-    }
+    @extend .flip-containers;
     @media #{$media-tablet} {
         .flex-first {
             padding-left: 10px !important;
             padding-right: 10px !important;
         }
     }
+}
+.aboutProduct__section {
+    background: $white none repeat scroll 0 0;
+    position: relative;
+    &-content {
+        @include padding(60px 0);
+        h2 {
+            @include font-size(38);
+            color: $zblack;
+            @extend .font-regular;
+        }
+        p {
+            @include font-size(17);
+            color: $zblack;
+            margin-top: 15px;
+        }
+    }
+    &-image {
+        float: right;
+        @include translate(0%, -50%);
+        z-index: 100; 
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    @extend .flip-containers;
 }
 /* End Basic Coding
    ================================ */
@@ -86,8 +99,9 @@ ul li, ol li {
    ================================ */
 
 @import 'elements/key_elements/buttons';
-@import 'elements/key_elements/form';
+@import 'elements/key_elements/form'; 
 @import 'elements/key_elements/banner';
+@import 'elements/key_elements/image-withContent';
 @import 'elements/pagecontrols/pageheader'; 
 @import 'elements/pagecontrols/pagefooter';
 

@@ -1,0 +1,28 @@
+/* Image with content section
+================================ */
+
+.image-withContent__wrapper {
+    &-image {
+        min-height: $viewportSize;
+        height: 500px; 
+    }
+    &-content {
+        min-height: $viewportSize;
+        h3 {
+            @include font-size(36);
+            @extend .font-regular; 
+        }
+        p {
+            @include font-size(14);
+            margin-top: 15px;
+        }
+        @extend .containerFluid-content; 
+        @extend .containerFluid-content-left;
+        @include padding(10px 10px 10px 90px);
+        &-blackTxt {
+            h3, p {
+                color: $zblack;
+            }
+        }
+    }
+}

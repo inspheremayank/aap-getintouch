@@ -7,12 +7,12 @@
                     <ul class="d-flex align-items-center">
                         <li class="logo-aap">
                             <a href="javascript:;">
-                                <img src="static/images/logo-aap.svg" class="img-fluid" alt="aap logo" />
+                                <img src="static/images/logo/logo-aap.svg" class="img-fluid" alt="aap logo" />
                             </a> 
                         </li>
                         <li class="logo-cognitives">
                             <a href="javascript:;">
-                                <img src="static/images/logo-cognitives.svg" class="img-fluid" alt="aap logo" />
+                                <img src="static/images/logo/logo-cognitives.svg" class="img-fluid" alt="aap logo" />
                             </a> 
                         </li>
                     </ul>
