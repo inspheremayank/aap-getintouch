@@ -139,15 +139,24 @@ include("includes/_header.php");
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 px-0">
-                <div class="image-withContent__wrapper-image image-covered" style="background-image: url('static/images/banner-image.jpg')"></div>
+                <div class="image-withContent__wrapper-image video image-covered" style="background-image: url('static/images/banner-image.jpg')">
+                    <div class="video-title">
+                        <a href="javascript:;" class="d-flex align-items-center justify-content-center">
+                            <span class="icon"></span>
+                            <span class="title">Transform the way you publish</span>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-md-6 px-0 darkBlue__bg">
                 <div class="image-withContent__wrapper-content d-flex justify-content-center align-items-start flex-column">
                     <h3>An expert partner you can trust</h3>
                     <p>We are a consortium of publishing technology companies and media providers. Our clients are rural and regional publishers, universities, and large publishers. We build and maintain media websites and apps for some of the country's biggest media brands, along with well known rural media companies throughout Australia.</p>
-                    <ul class="logos-section">
+                    <ul class="logos-section d-flex justify-content-between align-items-center">
                         <li>
                             <a href="javascript:;"><img src="static/images/logo/logo-aap-publish.png" class="img-fluid" alt="aap publish logo" /></a>
+                        </li>
+                        <li class="cognitives">
                             <a href="javascript:;"><img src="static/images/logo/logo-cognitives-white.svg" class="img-fluid" alt="cognitives logo" /></a>
                         </li>
                     </ul>
@@ -157,6 +166,20 @@ include("includes/_header.php");
     </div>
 </div>
 <!-- End image with content section markup -->
+<div class="clearfix"></div>
+<!-- Begin innovation funds section markup -->
+<div class="innovation__wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="innovation__wrapper-image text-center">
+                    <img src="static/images/innovation-fund-group.png" class="img-fluid" alt="innovation funds" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End innovation funds section markup -->
 <div class="clearfix"></div>
 <!-- Begin image with content section markup -->
 <div class="image-withContent__wrapper">

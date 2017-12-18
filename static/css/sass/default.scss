@@ -40,7 +40,7 @@ ul li, ol li {
     position: relative;
     width: $viewportSize;
     @include padding(6rem 0 8rem);
-    min-height: calc(100vh - 100px); 
+    min-height: calc(100vh - 198px); 
     &-form {
         .title {
             @include font-size(38);
@@ -87,6 +87,9 @@ ul li, ol li {
         right: 0;
     }
     @extend .flip-containers;
+}
+.innovation__wrapper {
+    background: $white none repeat scroll 0 0;
 }
 /* End Basic Coding
    ================================ */

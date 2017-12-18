@@ -4,7 +4,51 @@
 .image-withContent__wrapper {
     &-image {
         min-height: $viewportSize;
-        height: 500px; 
+        position: relative;
+        height: 500px;
+        &.video {
+            &:after {
+                content: '';
+                z-index: 99;
+                @include linear-gradient(rgba(25, 44, 84, 0.2), $zblack);
+                @include size(#{$viewportSize});
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .video-title {
+                z-index: 100;
+                position: absolute;
+                bottom: 20px;
+                left: 60px;
+                width: 80%;
+                max-width: 300px;
+                .icon {
+                    @include size(55px);
+                    @include border-radius(50%);
+                    border: 1px solid $white;
+                    display: block;
+                    position: relative;
+                    &:before {
+                        content: '\f04b';
+                        font-family: $iconfont;
+                        position: absolute;
+                        left: 52%;
+                        top: 52%;
+                        @include translate(-50%,-50%);
+                        @include font-size(28);
+                        line-height: 1;
+                    }
+                }
+                .title {
+                    @extend .font-semiBold;
+                    @include font-size(26);
+                    line-height: 1.5;
+                    margin-left: 25px;
+                    max-width: 180px;
+                }
+            }
+        }
     }
     &-content {
         min-height: $viewportSize;
@@ -15,6 +59,19 @@
         p {
             @include font-size(14);
             margin-top: 15px;
+        }
+        .logos-section {
+            width: $viewportSize;
+            margin-top: 30px;
+            li {
+                width: 150px;
+                a {
+                    display: block;
+                }
+                &.cognitives { 
+                    width: 200px;
+                }
+            }
         }
         @extend .containerFluid-content; 
         @extend .containerFluid-content-left;
