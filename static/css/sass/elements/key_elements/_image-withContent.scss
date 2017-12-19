@@ -5,7 +5,10 @@
     &-image {
         min-height: $viewportSize;
         position: relative;
-        height: 500px;
+        height: 650px;
+        @media (max-width: 1320px) {
+            height: 500px;
+        }
         @media #{$media-ipadSmall} {
             height: 300px;
         }
@@ -22,10 +25,10 @@
             .video-title {
                 z-index: 100;
                 position: absolute;
-                bottom: 60px;
-                left: 60px;
+                bottom: 40px;
+                left: 40px;
                 width: 80%;
-                max-width: 300px;
+                max-width: 350px;
                 @media #{$media-ipadPortrait} {
                     left: 20px;
                 }
@@ -47,11 +50,11 @@
                     }
                 }
                 .title {
-                    @extend .font-semiBold;
+                    @extend .font-bold;
                     @include font-size(26);
-                    line-height: 1.5;
+                    line-height: 1.23;
                     margin-left: 25px;
-                    max-width: 180px;
+                    max-width: 270px;
                 }
             }
         }

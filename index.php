@@ -37,7 +37,7 @@ include("includes/_header.php");
                             <label for="phone" class="sr-only">Phone</label>
                             <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone number" />
                         </div>
-                        <button onclick="window.location.href='/home.php'" class="button upper button-radius button-red">let's go</button>
+                        <button onclick="window.location.href='home.php'" class="button upper button-radius button-red">let's go</button>
                     </div>
                 </aside>
             </div>

@@ -13,7 +13,7 @@ include("includes/_header.php");
 ?>
 <div class="clearfix"></div>
 <!-- Begin about Banner section markup -->
-<div class="banner__section image-covered text-center" style="background-image: url('http://via.placeholder.com/2000x1000')">
+<div class="banner__section image-covered text-center" style="background-image: url('static/images/banner-image.png')">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -34,7 +34,7 @@ include("includes/_header.php");
         <div class="row justify-content-center">
             <div class="col-12 col-lg-5 flex-last animated fadeInUp">
                 <div class="aboutProduct__section-image">
-                    <img src="http://via.placeholder.com/300x550" class="img-fluid" alt="about image" />
+                    <img src="static/images/iPhone-6-Three-Quarters-View-Mockup-Part-2_PIXEDEN.png" class="img-fluid" alt="about image" />
                 </div>
             </div>
             <div class="col-12 col-lg-5 flex-first">
@@ -54,7 +54,7 @@ include("includes/_header.php");
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 px-0">
-                <div class="image-withContent__wrapper-image image-covered" style="background-image: url('http://via.placeholder.com/2000x1000')"></div>
+                <div class="image-withContent__wrapper-image image-covered" style="background-image: url('static/images/image-1.png')"></div>
             </div>
             <div class="col-12 col-md-6 px-0 darkBlue__bg responsive__px0-to-10">
                 <div class="image-withContent__wrapper-content image-withContent__wrapper-content-rightContainer d-flex justify-content-center align-items-start flex-column">
@@ -73,7 +73,7 @@ include("includes/_header.php");
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 px-0 flex-last">
-                <div class="image-withContent__wrapper-image image-covered" style="background-image: url('http://via.placeholder.com/2000x1000')"></div>
+                <div class="image-withContent__wrapper-image image-covered" style="background-image: url('static/images/image-2.png')"></div>
             </div>
             <div class="col-12 col-md-6 px-0 flex-first offwhite__bg responsive__px0-to-10">
                 <div class="image-withContent__wrapper-content d-flex justify-content-center align-items-start flex-column">
@@ -147,7 +147,7 @@ include("includes/_header.php");
                     <div class="video-title">
                         <a href="javascript:;" class="d-flex align-items-center justify-content-center">
                             <span class="icon"></span>
-                            <span class="title">Transform the way you publish</span>
+                            <span class="title upper">Transform the way you publish</span>
                         </a>
                     </div>
                 </div>
@@ -171,6 +171,86 @@ include("includes/_header.php");
 </div>
 <!-- End image with content section markup -->
 <div class="clearfix"></div>
+<!-- Begin clients section markup -->
+<div class="clients__wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center">Some of our happy publishing clients</h3>
+                <div class="clients__wrapper-slider">
+                    sdsd
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End clients section markup -->
+<div class="clearfix"></div>
+<!-- Begin technology section markup -->
+<div class="technology__wrapper">
+    <div class="container">
+        <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-12 col-md-5">
+                <div class="technology__wrapper-content">
+                    <div class="title">We build publishing sites with groundbreaking technology</div>
+                    <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud xercitation ullamco laboris nisi ut aliquip ex ea commod.</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <div class="technology__wrapper-list">
+                    <ul>
+                        <li>
+                            <div class="technology__wrapper-list-icon">
+                                <span>
+                                    <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="icon" />
+                                </span>
+                            </div>
+                            <div class="technology__wrapper-list-content">
+                                <div class="title">Social funnel</div>
+                                <div class="content">Shape the community conversation - aggregate and moderate most important local conversations on social media, and publish them under your trusted brand</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="technology__wrapper-list-icon">
+                                <span>
+                                    <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="icon" />
+                                </span>
+                            </div>
+                            <div class="technology__wrapper-list-content">
+                                <div class="title">Content creator</div>
+                                <div class="content">Simple, turnkey tools built for multi-channel publishing - from multi-site publishing, social channels to AMP and Google News. </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="technology__wrapper-list-icon">
+                                <span>
+                                    <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="icon" />
+                                </span>
+                            </div>
+                            <div class="technology__wrapper-list-content">
+                                <div class="title">Live editor</div>
+                                <div class="content">Video, slideshows or articles - Put your best stories where they need to be. Our drag and drop content makes site e3diting a cinch. </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="technology__wrapper-list-icon">
+                                <span>
+                                    <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="icon" />
+                                </span>
+                            </div>
+                            <div class="technology__wrapper-list-content">
+                                <div class="title">Measured approach</div>
+                                <div class="content">Live native stats tell the story of what content is working and whats not ... and when to amplify your efforts.</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End technology section markup -->
+<div class="clearfix"></div>
 <!-- Begin innovation funds section markup -->
 <div class="innovation__wrapper">
     <div class="container">
@@ -181,7 +261,7 @@ include("includes/_header.php");
                     <p>The recent media law reforms passed with an inclusion of a $50 million grant for regional and small publishers to help them adapt to the changing media landscape and better serve their communities. </p>
                 </div>
                 <div class="innovation__wrapper-image text-center">
-                    <img src="http://via.placeholder.com/2000x1000" class="img-fluid" alt="innovation funds" />
+                    <img src="static/images/innovation-fund-group.png" class="img-fluid" alt="innovation funds" />
                 </div>
                 <div class="innovation__wrapper-listing">
                     <ul class="innovation__list d-flex flex-wrap justify-content-between">
@@ -208,12 +288,54 @@ include("includes/_header.php");
 </div>
 <!-- End innovation funds section markup -->
 <div class="clearfix"></div>
+<!-- Begin how to apply section markup -->
+<div class="apply__wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-10 m-auto">
+                <h3 class="text-center">How do I apply?</h3>
+                <ul class="apply__wrapper-list d-flex flex-wrap justify-content-between">
+                    <li>
+                        <div class="apply__wrapper-list-count">1</div>
+                        <div class="apply__wrapper-list-content">
+                            <div class="title">Get In Touch</div>
+                            <div class="content">Contact our friendly team to understand what is available to you and how we can help. We are a team of journalists, designers, developers and media experts. </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="apply__wrapper-list-count">2</div>
+                        <div class="apply__wrapper-list-content">
+                            <div class="title">Apply with us in early 2018</div>
+                            <div class="content">The application process is being developed by the federal government now. We will be in consultation with ACMA to fully understand the process and will be able to guide you through applying ensuring you get the best outcome.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="apply__wrapper-list-count">3</div>
+                        <div class="apply__wrapper-list-content">
+                            <div class="title">Receive your tailored pack</div>
+                            <div class="content">After understanding your business we will develop a tailored pack to your media company - including proposal for the number of mastheads and publications your manage and your training needs.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="apply__wrapper-list-count">4</div>
+                        <div class="apply__wrapper-list-content">
+                            <div class="title">Execute</div>
+                            <div class="content">Once the applications are in, the first round of funding will be allocated from July 2018 - we will be ready to kick off your projects then and ensure they are delivered smoothly and efficently. </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End how to apply section markup -->
+<div class="clearfix"></div>
 <!-- Begin image with content section markup -->
 <div class="image-withContent__wrapper">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 px-0">
-                <div class="image-withContent__wrapper-image image-covered" style="background-image: url('http://via.placeholder.com/2000x1000')"></div>
+                <div class="image-withContent__wrapper-image image-covered" style="background-image: url('static/images/image-4.png')"></div>
             </div>
             <div class="col-12 col-md-6 px-0 offwhite__bg responsive__px0-to-10">
                 <div class="image-withContent__wrapper-content image-withContent__wrapper-content-rightContainer image-withContent__wrapper-content-blackTxt d-flex justify-content-center align-items-start flex-column">
