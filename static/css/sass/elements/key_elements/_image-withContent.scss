@@ -60,7 +60,13 @@
         }
     }
     &-content {
-        min-height: $viewportSize;
+        min-height: 650px;
+        @media (max-width: 1320px) {
+            min-height: 500px;
+        }
+        @media #{$media-ipadSmall} {
+            min-height: 450px;
+        }
         @media #{$media-ipadSmall} {
             &.justify-content-center {
                 -webkit-justify-content: flex-start;

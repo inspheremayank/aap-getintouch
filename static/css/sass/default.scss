@@ -39,7 +39,7 @@ ul li, ol li {
 .getForm__wrapper {
     position: relative;
     width: $viewportSize;
-    @include padding(130px 0 160px);
+    @include padding(170px 0 190px);
     min-height: calc(100vh - 198px); 
     &-form {
         padding-right: 40px;
