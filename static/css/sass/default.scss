@@ -176,7 +176,7 @@ ul li, ol li {
         color: $zblack;
         @include font-size(28);
         @extend .font-bold;
-        line-height: 2.14 !important;
+        line-height: 1.5 !important;
         margin-bottom: 20px;
     }
     &-slider {
@@ -210,6 +210,9 @@ ul li, ol li {
         left: 50%;
         @include translate(-50%,-50%);
         background: $white none repeat scroll 0 0;
+        @media #{$media-ipadSmall} {
+            display: none;
+        }
     }
     &-content {
         .title {
@@ -225,6 +228,9 @@ ul li, ol li {
         }
     }
     &-list {
+        @media #{$media-ipadSmall} {
+            margin-top: 40px;
+        }
         li {
             width: $viewportSize; 
             margin-bottom: 40px;
