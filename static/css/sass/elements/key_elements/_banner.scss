@@ -1,6 +1,8 @@
 /* banner section
 ================================ */
 .banner__section {
+    height: -moz-calc(100vh - 98px);
+    height: -webkit-calc(100vh - 98px);
     height: calc(100vh - 98px);
     min-height: 500px;
     position: relative;
@@ -18,7 +20,9 @@
         z-index: 100;
         max-width: 700px;
         width: 90%;
-        height: calc(100vh - 98px);
+        height: -moz-calc(100vh - 98px);
+        height: -webkit-calc(100vh - 98px);
+        height: calc(100vh - 98px); 
         min-height: 500px;
         h1 {
             @include font-size(55);
