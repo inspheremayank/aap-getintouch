@@ -17,7 +17,7 @@ include("includes/_header.php");
         <div class="row justify-content-between">
             <div class="col-12 col-md-6 col-lg-5 px-0 flex-last">
                 <aside class="getForm__wrapper-image">
-                    <img src="/static/images/preview.png" class="img-fluid" alt="Laptop image" />
+                    <img src="static/images/preview.png" class="img-fluid" alt="Laptop image" />
                 </aside>
             </div>
             <div class="col-12 col-md-6 px-0 flex-first">

@@ -143,7 +143,7 @@ include("includes/_header.php");
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 px-0">
-                <div class="image-withContent__wrapper-image video image-covered" style="background-image: url('http://via.placeholder.com/2000x1000')">
+                <div class="image-withContent__wrapper-image video image-covered" style="background-image: url('static/images/image-3.png')">
                     <div class="video-title">
                         <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="d-flex align-items-center justify-content-center">
                             <span class="icon"></span>
