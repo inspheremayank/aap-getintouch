@@ -173,12 +173,48 @@ include("includes/_header.php");
 <div class="clearfix"></div>
 <!-- Begin clients section markup -->
 <div class="clients__wrapper">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <h3 class="text-center">Some of our happy publishing clients</h3>
                 <div class="clients__wrapper-slider">
-                    sdsd
+                    <ul class="regular slider">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="static/images/clients/country-news.png" class="img-fluid" alt="logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="static/images/clients/news.png" class="img-fluid" alt="logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="static/images/clients/uts.png" class="img-fluid" alt="logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="static/images/clients/newsroom.png" class="img-fluid" alt="logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="static/images/clients/common-wealth.png" class="img-fluid" alt="logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="static/images/clients/monash.png" class="img-fluid" alt="logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="static/images/clients/field-games.png" class="img-fluid" alt="logo" />
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -12,3 +12,34 @@ $.event.add(window, "scroll", function () {
         $('.header').removeClass('header__fixed');
     }
 });
+
+$(".regular").slick({
+    dots: false,
+    infinite: true,
+    arrows: false,
+    slidesToShow: 7,
+    slidesToScroll: 7,
+    responsive: [
+        {
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 5
+            }
+        },
+        {
+            breakpoint: 880,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+        },
+        {
+            breakpoint: 585,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
