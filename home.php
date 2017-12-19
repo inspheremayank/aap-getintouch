@@ -82,7 +82,7 @@ include("includes/_header.php");
                             <div class="listing__view-container">
                                 <div class="listing__view-icon">
                                     <span>
-                                        <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="Enterprise icon" />
+                                        <img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="Enterprise icon" />
                                     </span>
                                 </div>
                                 <div class="listing__view-content">
@@ -95,7 +95,7 @@ include("includes/_header.php");
                             <div class="listing__view-container">
                                 <div class="listing__view-icon">
                                     <span>
-                                        <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="App icon" />
+                                        <img src="static/images/icons/theme/app.png" class="img-fluid" alt="App icon" />
                                     </span>
                                 </div>
                                 <div class="listing__view-content">
@@ -108,7 +108,7 @@ include("includes/_header.php");
                             <div class="listing__view-container">
                                 <div class="listing__view-icon">
                                     <span>
-                                        <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="Training icon" />
+                                        <img src="static/images/icons/theme/training.png" class="img-fluid" alt="Training icon" />
                                     </span>
                                 </div>
                                 <div class="listing__view-content">
@@ -121,7 +121,7 @@ include("includes/_header.php");
                             <div class="listing__view-container">
                                 <div class="listing__view-icon">
                                     <span>
-                                        <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="Revenue icon" />
+                                        <img src="static/images/icons/theme/revenue.png" class="img-fluid" alt="Revenue icon" />
                                     </span>
                                 </div>
                                 <div class="listing__view-content">
@@ -145,7 +145,7 @@ include("includes/_header.php");
             <div class="col-12 col-md-6 px-0">
                 <div class="image-withContent__wrapper-image video image-covered" style="background-image: url('http://via.placeholder.com/2000x1000')">
                     <div class="video-title">
-                        <a href="javascript:;" class="d-flex align-items-center justify-content-center">
+                        <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="d-flex align-items-center justify-content-center">
                             <span class="icon"></span>
                             <span class="title upper">Transform the way you publish</span>
                         </a>
@@ -238,7 +238,7 @@ include("includes/_header.php");
                         <li>
                             <div class="technology__wrapper-list-icon">
                                 <span>
-                                    <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="icon" />
+                                    <img src="static/images/icons/theme/social-funnel.png" class="img-fluid" alt="icon" />
                                 </span>
                             </div>
                             <div class="technology__wrapper-list-content">
@@ -249,7 +249,7 @@ include("includes/_header.php");
                         <li>
                             <div class="technology__wrapper-list-icon">
                                 <span>
-                                    <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="icon" />
+                                    <img src="static/images/icons/theme/content-creator.png" class="img-fluid" alt="icon" />
                                 </span>
                             </div>
                             <div class="technology__wrapper-list-content">
@@ -260,7 +260,7 @@ include("includes/_header.php");
                         <li>
                             <div class="technology__wrapper-list-icon">
                                 <span>
-                                    <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="icon" />
+                                    <img src="static/images/icons/theme/live-editor.png" class="img-fluid" alt="icon" />
                                 </span>
                             </div>
                             <div class="technology__wrapper-list-content">
@@ -271,7 +271,7 @@ include("includes/_header.php");
                         <li>
                             <div class="technology__wrapper-list-icon">
                                 <span>
-                                    <img src="http://via.placeholder.com/35x35" class="img-fluid" alt="icon" />
+                                    <img src="static/images/icons/theme/measured-approach.png" class="img-fluid" alt="icon" />
                                 </span>
                             </div>
                             <div class="technology__wrapper-list-content">

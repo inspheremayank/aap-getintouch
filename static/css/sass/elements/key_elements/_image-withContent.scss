@@ -87,7 +87,7 @@
             li {
                 width: 50%; 
                 color: $zblack;
-                margin-bottom: 40px;
+                margin: 20px 0;
                 @media #{$media-ipadPortrait} {
                     width: $viewportSize;
                     margin-bottom: 25px;
