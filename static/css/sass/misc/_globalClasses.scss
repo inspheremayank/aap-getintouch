@@ -23,6 +23,9 @@
 .offwhite {
     &__bg { 
         background: $offwhite !important;
+        &-opacity02 {
+            background: rgba($offwhite, 0.2) !important;
+        }
     }
     &__color {
         color: $offwhite !important;

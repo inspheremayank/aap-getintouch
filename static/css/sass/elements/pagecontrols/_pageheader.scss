@@ -7,7 +7,7 @@
     width: $viewportSize;
     @include transition(all 0.3s ease);
     background: rgba($white, 1) none repeat scroll 0 0;
-    
+    @include box-shadow(#b4bac5 0px 2px 4px 0px);
     &__section {
         &-left {
             ul {
@@ -68,6 +68,7 @@
             &-right {
                 .button {
                     @include padding(10px 16px);
+                    @include font-size(12);
                 }
                 @media #{$media-ipadSmall} {
                     display: none;

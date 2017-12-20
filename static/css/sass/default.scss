@@ -242,6 +242,7 @@ ul li, ol li {
         }
         &-icon { 
             @include size(30px);
+            margin-top: 7px;
         }
         &-content { 
             width: calc(100% - 50px);
@@ -286,7 +287,7 @@ ul li, ol li {
             color: $green;
             text-align: center;
             @include font-size(18);
-            line-height: 1.67 !important;
+            line-height: inherit !important;
             @extend .font-bold;
         }
         &-content { 

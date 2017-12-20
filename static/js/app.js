@@ -17,8 +17,10 @@ $(".regular").slick({
     dots: false,
     infinite: true,
     arrows: false,
-    slidesToShow: 7,
-    slidesToScroll: 7,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
         {
             breakpoint: 1199,

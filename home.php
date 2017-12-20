@@ -69,13 +69,13 @@ include("includes/_header.php");
 <!-- End image with content section markup -->
 <div class="clearfix"></div>
 <!-- Begin image with content section markup -->
-<div class="image-withContent__wrapper">
+<div class="image-withContent__wrapper white__bg">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 px-0 flex-last">
                 <div class="image-withContent__wrapper-image image-covered" style="background-image: url('static/images/image-2.png')"></div>
             </div>
-            <div class="col-12 col-md-6 px-0 flex-first offwhite__bg responsive__px0-to-10">
+            <div class="col-12 col-md-6 px-0 flex-first offwhite__bg-opacity02 responsive__px0-to-10">
                 <div class="image-withContent__wrapper-content d-flex justify-content-center align-items-start flex-column">
                     <ul class="listing__view d-flex flex-wrap">
                         <li>
@@ -367,13 +367,13 @@ include("includes/_header.php");
 <!-- End how to apply section markup -->
 <div class="clearfix"></div>
 <!-- Begin image with content section markup -->
-<div class="image-withContent__wrapper">
+<div class="image-withContent__wrapper white__bg">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 px-0">
                 <div class="image-withContent__wrapper-image image-covered" style="background-image: url('static/images/image-4.png')"></div>
             </div>
-            <div class="col-12 col-md-6 px-0 offwhite__bg responsive__px0-to-10">
+            <div class="col-12 col-md-6 px-0 offwhite__bg-opacity02 responsive__px0-to-10">
                 <div class="image-withContent__wrapper-content image-withContent__wrapper-content-rightContainer image-withContent__wrapper-content-blackTxt d-flex justify-content-center align-items-start flex-column">
                     <h3>Transform your Media Company</h3>
                     <p>Take the first step towards a digital transformation of your media company with our bespoke software, training, web development and content offering.</p>
