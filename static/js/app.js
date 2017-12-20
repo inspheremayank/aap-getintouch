@@ -39,6 +39,7 @@ $(".regular").slick({
         {
             breakpoint: 585,
             settings: {
+                arrows: true,
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
@@ -46,11 +47,11 @@ $(".regular").slick({
     ]
 });
 $('[data-fancybox]').fancybox({
-	youtube : {
-		controls : 0,
-		showinfo : 0
-	},
-	vimeo : {
-		color : 'f00'
-	}
+    youtube: {
+        controls: 0,
+        showinfo: 0
+    },
+    vimeo: {
+        color: 'f00'
+    }
 });

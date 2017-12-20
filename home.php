@@ -332,28 +332,28 @@ include("includes/_header.php");
                 <h3 class="text-center">How do I apply?</h3>
                 <ul class="apply__wrapper-list d-flex flex-wrap justify-content-between">
                     <li>
-                        <div class="apply__wrapper-list-count">1</div>
+                        <div class="apply__wrapper-list-count"><span>1</span></div>
                         <div class="apply__wrapper-list-content">
                             <div class="title">Get In Touch</div>
                             <div class="content">Contact our friendly team to understand what is available to you and how we can help. We are a team of journalists, designers, developers and media experts. </div>
                         </div>
                     </li>
                     <li>
-                        <div class="apply__wrapper-list-count">2</div>
+                        <div class="apply__wrapper-list-count"><span>2</span></div>
                         <div class="apply__wrapper-list-content">
                             <div class="title">Apply with us in early 2018</div>
                             <div class="content">The application process is being developed by the federal government now. We will be in consultation with ACMA to fully understand the process and will be able to guide you through applying ensuring you get the best outcome.</div>
                         </div>
                     </li>
                     <li>
-                        <div class="apply__wrapper-list-count">3</div>
+                        <div class="apply__wrapper-list-count"><span>3</span></div>
                         <div class="apply__wrapper-list-content">
                             <div class="title">Receive your tailored pack</div>
                             <div class="content">After understanding your business we will develop a tailored pack to your media company - including proposal for the number of mastheads and publications your manage and your training needs.</div>
                         </div>
                     </li>
                     <li>
-                        <div class="apply__wrapper-list-count">4</div>
+                        <div class="apply__wrapper-list-count"><span>4</span></div>
                         <div class="apply__wrapper-list-content">
                             <div class="title">Execute</div>
                             <div class="content">Once the applications are in, the first round of funding will be allocated from July 2018 - we will be ready to kick off your projects then and ensure they are delivered smoothly and efficently. </div>

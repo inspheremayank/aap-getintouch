@@ -7,7 +7,7 @@
     width: $viewportSize;
     @include transition(all 0.3s ease);
     background: rgba($white, 1) none repeat scroll 0 0;
-    @include box-shadow(#b4bac5 0px 2px 4px 0px);
+    @include box-shadow(rgba(0,0,0,0.2) 0px 1px 1.5px 1px);  
     &__section {
         &-left {
             ul {

@@ -180,6 +180,31 @@ ul li, ol li {
         margin-bottom: 20px;
     }
     &-slider {
+        .slick-prev, .slick-next {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            @include translate(0,-50%);
+            cursor: pointer;
+            @include size(30px);
+            background: $white none repeat scroll 0 0;
+            border: 1px solid rgba(0,0,0,0.3);
+            z-index: 99;
+            @include border-radius(50%);
+            &:before {
+                content: '\f104';
+                font-family: $iconfont;
+                color: #ccc;
+                @include opacity(1);
+            }
+        }
+        .slick-next{
+            left: auto;
+            right: 0;
+            &:before {
+                content: '\f105';
+            }
+        }
         .slick-track {
             @include flexbox();
             -webkit-box-align: center;
@@ -287,8 +312,16 @@ ul li, ol li {
             color: $green;
             text-align: center;
             @include font-size(18);
-            line-height: inherit !important;
+            line-height: 1 !important;
             @extend .font-bold;
+            position: relative;
+            span {
+                top: 46%;
+                position: absolute;
+                left: 50%;
+                @include translate(-50%,-50%);
+                line-height: 1; 
+            }
         }
         &-content { 
             width: calc(100% - 50px);
