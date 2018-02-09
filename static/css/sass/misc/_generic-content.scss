@@ -23,10 +23,16 @@
                 display: block;
             }
         }
+        img {
+            @media #{$media-ipadPortrait} {
+                margin-bottom: 20px;
+            }
+        }
         &.first {
             @media #{$media-ipadPortrait} {
                 border-bottom: 2px solid $borderlight;
-                @include padding-bottom(10px); 
+                @include padding-bottom(10px);
+                margin-bottom: 20px;
             }
         }
         &.single-view {

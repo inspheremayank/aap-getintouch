@@ -41,7 +41,7 @@ include("includes/_header.php");
                             <p class="highlight">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <div class="clearfix"></div>
                             <div class="image-withContent__wrapper-content image-withContent__wrapper-content--no-height fullwidth">
-                                <ul class="listing__view listing__view--small-font d-flex flex-wrap one-third">
+                                <ul class="listing__view listing__view--small-font d-flex flex-wrap one-third p-0">
                                     <li>
                                         <div class="listing__view-container">
                                             <div class="listing__view-icon">
@@ -85,7 +85,7 @@ include("includes/_header.php");
                             <h3 class="upper">Fullsuite</h3>
                             <p class="highlight">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <div class="image-withContent__wrapper-content image-withContent__wrapper-content--no-height fullwidth">
-                                <ul class="listing__view listing__view--small-font d-flex flex-wrap one-third">
+                                <ul class="listing__view listing__view--small-font d-flex flex-wrap one-third p-0">
                                     <li>
                                         <div class="listing__view-container">
                                             <div class="listing__view-icon">
