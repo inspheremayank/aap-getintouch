@@ -72,6 +72,15 @@
             border-color: darken($red, 8%); 
         }
     }
+    &-green {
+        background: $green none repeat scroll 0 0;
+        color: $darkBlue !important;
+        border-color: $green;
+        &:hover, &:focus {
+            background: darken($green, 8%) none repeat scroll 0 0;
+            border-color: darken($green, 8%); 
+        }
+    }
     i {
         margin-right: 8px;
     }

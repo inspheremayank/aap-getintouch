@@ -6,6 +6,44 @@
 .hide { 
     display: none;
 }
+.divider-line {
+    margin: 20px 0 40px;
+    width: $viewportSize;
+    position: relative;
+    float: left;
+    clear: left;
+    &:before {
+        content: '';
+        height: 2px;
+        width: 40px;
+        background: $borderlight none repeat scroll 0 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &-80 {
+        &:before {
+            width: 80px; 
+        }
+    }
+    &-space40 {
+        margin: 40px 0 60px; 
+    }
+}
+.mt {
+    &-c4 {
+        margin-top: 4rem !important;
+    }
+    &-c5 {
+        margin-top: 5rem !important;
+    }
+    &-c6 {
+        margin-top: 6rem !important;
+    }
+    &-c7 {
+        margin-top: 7rem !important;
+    }
+}
 .fullwidth { 
     width: $viewportSize !important;
 }

@@ -1,15 +1,15 @@
 /* Page Footer section
 ================================ */
 .footer {
-    background: $white none repeat scroll 0 0;
+    background: $black2 none repeat scroll 0 0;
     @include padding(30px 0);
     &__content {
         @media #{$media-ipadPortrait} {
-            margin-bottom: 20px;
+            margin-top: 20px;
         }
         p {
             margin-bottom: 0px;
-            color: $grey;
+            color: $light-grey;
             @include font-size(12);
             line-height: 1.5;
             text-align: right;
@@ -18,7 +18,7 @@
                 text-align: center;
             }
             a {
-                color: $grey;
+                color: $light-grey;
                 @include font-size(12);
                 &:after {
                     content: '|';
@@ -26,12 +26,12 @@
                     margin-right: 1px;
                 }
                 &:hover, &:focus {
-                    color: $blue;
+                    color: $white;
                     &:after {
-                        color: $grey;
+                        color: $light-grey;
                     }
                 }
-            }
+            } 
         }
     }
     &__logo {

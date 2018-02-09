@@ -1,0 +1,45 @@
+/* Offer section
+================================ */
+
+/* Begin heighlited section style */
+.page-offer {
+    @include padding(100px 0 90px);
+}
+.heightlight-section {
+    background: $defaultbg none repeat scroll 0 0;
+    @include padding(40px 0);
+    .button-set {
+        -webkit-box-pack: justify;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        @include flexbox();
+    }
+}
+.calendar-section {
+    border: 1px solid $borderlight;
+    border-left: none;
+    border-right: none;
+    @include padding(20px 0);
+    margin: 10px 0 15px;
+    .icon {
+        width: 40px;
+    }
+    .title {
+        color: $red;
+        font-style: italic;
+        width: calc(#{$viewportSize} - 60px);
+        margin-left: 20px;
+        @include font-size(12);
+        @include padding-right(30px);
+        line-height: 1.5;
+        @extend .font-regular;
+        .bold {
+            @extend .font-bold; 
+        }
+    }
+}
+
+
+/* End heighlited section style */

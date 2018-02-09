@@ -7,28 +7,35 @@
     width: $viewportSize;
     @include transition(all 0.3s ease);
     background: rgba($white, 1) none repeat scroll 0 0;
-    @include box-shadow(rgba(0,0,0,0.2) 0px 1px 1.5px 1px);  
+    @include box-shadow(rgba(0,0,0,0.2) 0px 1px 1.5px 1px);
+    @media #{$media-ipadPortrait} {
+        background: $black2 none repeat scroll 0 0;
+        @include padding(15px 0);
+    }
     &__section {
         &-left {
             ul {
                 overflow: hidden;
-                @media #{$media-ipadPortrait} {
-                    -webkit-box-pack: justify;
-                    -moz-box-pack: justify;
-                    -ms-flex-pack: justify;
-                    -webkit-justify-content: space-between;
-                    justify-content: space-between;
-                }
                 li {
                     float: left; 
                     &.logo-aap {
                         width: 100px;
+                        @media #{$media-ipadPortrait} {
+                            width: 40px; 
+                        }
                     }
                     &.logo-cognitives {
                         width: 190px;
+                        @media #{$media-ipadPortrait} {
+                            width: 40px;
+                            margin-left: 30px;
+                        }
                     }
                     + li {
                         margin-left: 40px;
+                        @media #{$media-ipadPortrait} {
+                            margin-left: 0px; 
+                        }
                     }
                     a {
                         display: block;
@@ -40,6 +47,198 @@
                 }
             }
         }
+        &-center {
+            text-align: center;
+            @media #{$media-ipadPortrait} {
+                text-align: right;
+            }
+            &.navigation-section {
+                .open-menu {
+                    top: -26px;
+                    right: 0px;
+                    width: 50px;
+                    height: 14px;
+                    margin: auto;
+                    display: none;
+                    cursor: pointer;
+                    z-index: 99;
+                    position: absolute;
+                    @include transition(all 0.3s ease);
+                    span {
+                        position: absolute;
+                        display: block;
+                        font-size: 0;
+                        width: 20px;
+                        height: 1px;
+                        background-color: $white;
+                        margin: auto;
+                        left: 0;
+                        right: 0;
+                        overflow: hidden;
+                        &:after {
+                            top: 0;
+                            left: 0;
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            background-color: $white;
+                            -webkit-transform: translateX(-100%);
+                            -moz-transform: translateX(-100%);
+                            -ms-transform: translateX(-100%);
+                            -o-transform: translateX(-100%);
+                            transform: translateX(-100%);
+                            -webkit-transition: all 0.2s linear;
+                            -moz-transition: all 0.2s linear;
+                            -ms-transition: all 0.2s linear;
+                            -o-transition: all 0.2s linear;
+                            transition: all 0.2s linear;
+                        }
+                    }
+                    .item-1 {
+                        top: 0;
+                    }
+                    .item-2 {
+                        top: 0;
+                        bottom: 0;
+                        &:after {
+                            -webkit-transition-delay: 0.1s;
+                            -moz-transition-delay: 0.1s;
+                            -ms-transition-delay: 0.1s;
+                            -o-transition-delay: 0.1s;
+                            transition-delay: 0.1s;
+                        }
+                    }
+                    .item-3 {
+                        bottom: 0;
+                        &:after {
+                            -webkit-transition-delay: 0.2s;
+                            -moz-transition-delay: 0.2s;
+                            -ms-transition-delay: 0.2s;
+                            -o-transition-delay: 0.2s;
+                            transition-delay: 0.2s;
+                        }
+                    }
+                    &:hover span:after {
+                        -webkit-transform: translateZ(0);
+                        -moz-transform: translateZ(0);
+                        -ms-transform: translateZ(0);
+                        -o-transform: translateZ(0);
+                        transform: translateZ(0);
+                    }
+                    @media #{$media-ipadSmall} {
+                        width: 42px;
+                        display: block; 
+                    }
+                    &.active {
+                        .item-2 {
+                            display: none;
+                        }
+                        .item-1 {
+                            @include rotate(45);
+                        }
+                        .item-3 {
+                            @include rotate(-45);
+                            bottom: auto;
+                        }
+                    }
+                }
+                ul {
+                    li {
+                        display: inline-block;
+                        position: relative;
+                        a {
+                            color: $grey;
+                            text-transform: uppercase;
+                            @extend .font-semiBold;
+                            @include font-size(12);
+                            letter-spacing: 2px;
+                            position: relative;
+                            @include transition(all 0.3s ease);
+                            @media #{$media-ipadPortrait} {
+                                color: $light-grey;
+                            }
+                            &:before {
+                                content: '';
+                                height: 2px;
+                                background: $red none repeat scroll 0 0;
+                                width: 0px;
+                                position: absolute;
+                                bottom: -8px;
+                                left: 0;
+                                @include transition(all 0.3s ease);
+                                @media #{$media-ipadPortrait} {
+                                    background: $white none repeat scroll 0 0;
+                                }
+                            }
+                            &:hover, &:focus {
+                                color: $red;
+                                @media #{$media-ipadPortrait} {
+                                    color: $white;
+                                }
+                                &:before {
+                                    width: 30px;
+                                }
+                            }
+                        }
+                        + li {
+                            margin-left: 25px;
+                        }
+                        &.active {
+                            a {
+                                color: $red;
+                                @media #{$media-ipadPortrait} {
+                                    color: $white;
+                                }
+                                &:before {
+                                    width: 30px;
+                                }
+                            }
+                        }
+                    }
+                    @media #{$media-ipadSmall} {
+                        position: absolute;
+                        top: -40px;
+                        left: 0;
+                        width: $viewportSize;
+                        background: $black2 none repeat scroll 0 0;
+                        z-index: 98;
+                        text-align: left;
+                        @include padding(70px 0 100px);
+                        @include opacity(0);
+                        visibility: hidden;
+                        @include transition(all 0.3s ease);
+                        li {
+                            width: $viewportSize;
+                            display: none;
+                            margin-left: 0 !important;
+                            @include padding(0 15px);
+                            text-align: left;
+                            a {
+                                @include padding(18px 0);
+                                border-bottom: 1px solid $white;
+                                color: $white;
+                                width: $viewportSize;
+                                display: block;
+                                &:before {
+                                    display: none;
+                                } 
+                            }
+                        }
+                        &.active {
+                            top: -55px;
+                            @include opacity(1);
+                            visibility: visible;
+                            li {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
         &-right {
             text-align: right;
             @media #{$media-ipadSmall} {
@@ -48,6 +247,12 @@
             }
             a {
                 @extend .font-bold;
+            }
+            .button {
+                @media #{$media-desktop} {
+                    @include padding(17px 12px);
+                    @include font-size(13);
+                }
             }
         }
     }
@@ -59,9 +264,15 @@
                 ul li {
                     &.logo-aap {
                         width: 70px;
+                        @media #{$media-ipadPortrait} {
+                            width: 40px;
+                        }
                     }
                     &.logo-cognitives {
-                        width: 150px; 
+                        width: 150px;
+                        @media #{$media-ipadPortrait} {
+                            width: 40px;
+                        }
                     }
                 }
             }

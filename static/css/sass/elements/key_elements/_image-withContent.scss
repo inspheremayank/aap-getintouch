@@ -86,6 +86,9 @@
         @media #{$media-ipadSmall} {
             min-height: 450px;
         }
+        &--no-height {
+            min-height: inherit !important;
+        }
         @media #{$media-ipadSmall} {
             &.justify-content-center {
                 -webkit-justify-content: flex-start;
@@ -109,6 +112,21 @@
             @media #{$media-ipadSmall} {
                 @include padding(50px 0 40px); 
             }
+            &.one-third {
+                li {
+                    width: calc(#{$viewportSize} / 3);
+                    @media #{$media-ipadPortrait} {
+                        width: $viewportSize;
+                    }
+                }
+            }
+            &--small-font {
+                .listing__view-content {
+                    h3 {
+                        @include font-size(16);
+                    }
+                }
+            }
             li {
                 width: 50%; 
                 color: $zblack;
@@ -123,7 +141,17 @@
             }
             &-container {
                 max-width: 80%;
-                @include flexbox(); 
+                @include flexbox();
+                @media #{$media-tablet} {
+                    max-width: $viewportSize;
+                }
+            }
+            &-aditional-content {
+                max-width: 80%;
+                margin-top: 8px;
+                @media #{$media-tablet} {
+                    max-width: $viewportSize;
+                }
             }
             &-content {
                 margin-left: 15px;

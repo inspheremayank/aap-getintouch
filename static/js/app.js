@@ -12,7 +12,18 @@ $.event.add(window, "scroll", function () {
         $('.header').removeClass('header__fixed');
     }
 });
-
+$(".navigation-section .open-menu").on('click', function() {
+   $(this).toggleClass('active');
+   $(this).next('ul').toggleClass('active');
+});
+$(document).ready(function() {
+    var path = window.location.href;
+    $('.navigation-section ul li a').each(function () {
+        if (this.href === path) {
+            $(this).parent().addClass('active');
+        }
+    });
+});
 $(".regular").slick({
     dots: false,
     infinite: true,
