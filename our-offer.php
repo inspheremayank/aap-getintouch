@@ -46,7 +46,7 @@ include("includes/_header.php");
                                         <div class="listing__view-container">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="Enterprise icon">
+                                                    <img src="static/images/icons/theme/enterprise.svg" class="img-fluid" alt="Enterprise icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
@@ -58,7 +58,7 @@ include("includes/_header.php");
                                         <div class="listing__view-container">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/revenue.png" class="img-fluid" alt="revenue icon">
+                                                    <img src="static/images/icons/theme/revenue.svg" class="img-fluid" alt="revenue icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
@@ -70,7 +70,7 @@ include("includes/_header.php");
                                         <div class="listing__view-container">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/app.png" class="img-fluid" alt="app icon">
+                                                    <img src="static/images/icons/theme/app.svg" class="img-fluid" alt="app icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
@@ -90,7 +90,7 @@ include("includes/_header.php");
                                         <div class="listing__view-container">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="Enterprise icon">
+                                                    <img src="static/images/icons/theme/enterprise.svg" class="img-fluid" alt="Enterprise icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
@@ -102,7 +102,7 @@ include("includes/_header.php");
                                         <div class="listing__view-container">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/revenue.png" class="img-fluid" alt="revenue icon">
+                                                    <img src="static/images/icons/theme/app.png" class="img-fluid" alt="revenue icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
@@ -114,7 +114,7 @@ include("includes/_header.php");
                                         <div class="listing__view-container">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/app.png" class="img-fluid" alt="app icon">
+                                                    <img src="static/images/icons/theme/enterprise.svg" class="img-fluid" alt="app icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
@@ -138,7 +138,7 @@ include("includes/_header.php");
                                         <div class="listing__view-container">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/revenue.png" class="img-fluid" alt="revenue icon">
+                                                    <img src="static/images/icons/theme/revenue.svg" class="img-fluid" alt="revenue icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
@@ -150,7 +150,7 @@ include("includes/_header.php");
                                         <div class="listing__view-container">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/app.png" class="img-fluid" alt="app icon">
+                                                    <img src="static/images/icons/theme/training.svg" class="img-fluid" alt="training icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
@@ -215,7 +215,7 @@ include("includes/_header.php");
                                         <div class="listing__view-container align-items-center">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="Enterprise icon">
+                                                    <img src="static/images/icons/theme/application-icon.svg" class="img-fluid" alt="Enterprise icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">

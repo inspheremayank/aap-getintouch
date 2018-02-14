@@ -60,26 +60,26 @@ include("includes/_header.php");
                                     <tbody>
                                         <tr>
                                             <td>Basic Cognitives Publishing Platform</td>
-                                            <td><img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="image" /></td>
-                                            <td><img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="image" /></td>
+                                            <td><img src="static/images/icons/theme/enterprise.svg" class="img-fluid" alt="image" /></td>
+                                            <td><img src="static/images/icons/theme/enterprise.svg" class="img-fluid" alt="image" /></td>
                                             <td>$30,000</td>
                                         </tr>
                                         <tr>
                                             <td>Basic Cognitives Publishing Platform</td>
-                                            <td><img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="image" /></td>
-                                            <td><img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="image" /></td>
+                                            <td><img src="static/images/icons/theme/enterprise.svg" class="img-fluid" alt="image" /></td>
+                                            <td><img src="static/images/icons/theme/enterprise.svg" class="img-fluid" alt="image" /></td>
                                             <td>$30,000</td>
                                         </tr>
                                         <tr>
                                             <td>Basic Cognitives Publishing Platform</td>
                                             <td>&nbsp;</td>
-                                            <td><img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="image" /></td>
+                                            <td><img src="static/images/icons/theme/enterprise.svg" class="img-fluid" alt="image" /></td>
                                             <td>$30,000<span>(per additional masthead)</span></td>
                                         </tr>
                                         <tr>
                                             <td>Basic Cognitives Publishing Platform</td>
-                                            <td><img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="image" /></td>
-                                            <td><img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="image" /></td>
+                                            <td><img src="static/images/icons/theme/enterprise.svg" class="img-fluid" alt="image" /></td>
+                                            <td><img src="static/images/icons/theme/enterprise.svg" class="img-fluid" alt="image" /></td>
                                             <td>$30,000</td>
                                         </tr>
                                     </tbody>
