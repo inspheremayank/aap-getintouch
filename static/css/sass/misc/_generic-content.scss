@@ -6,7 +6,7 @@
         @media #{$media-desktop} {
             @include padding-right(30px);
         }
-        h3 {
+        h3 { 
             color: $zblack;
             @extend .font-semiBold;
             @include font-size(20); 
@@ -21,6 +21,9 @@
             span {
                 @include font-size(14);
                 display: block;
+            }
+            &.bold {
+                @extend .font-bold;
             }
         }
         img {

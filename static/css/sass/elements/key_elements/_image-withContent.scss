@@ -124,6 +124,7 @@
                 .listing__view-content {
                     h3 {
                         @include font-size(16);
+                        @extend .font-semiBold;
                     }
                 }
             }

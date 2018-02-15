@@ -5,7 +5,7 @@
     &--customized {
         thead {
             th {
-                @extend .font-bold;
+                @extend .font-semiBold;
                 @include font-size(16);
                 color: $zblack;
                 border: none; 
@@ -17,7 +17,7 @@
                 border-top: 15px solid $white;
                 position: relative;
                 vertical-align: middle;
-                @extend .font-bold;
+                @extend .font-semiBold;
                 @include font-size(16);
                 color: $zblack;
                 span {

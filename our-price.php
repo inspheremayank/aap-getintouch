@@ -91,7 +91,7 @@ include("includes/_header.php");
                 <div class="row">
                     <div class="col-12 col-lg-3">
                         <div class="genneric-section--title-head">
-                            <h3 class="upper small-16">What happens at the end of the project?</h3>
+                            <h3 class="upper small-16 bold">What happens at the end of the project?</h3>
                         </div>
                     </div>
                     <div class="col-12 col-lg-7">
@@ -106,7 +106,7 @@ include("includes/_header.php");
                 <div class="row">
                     <div class="col-12 col-lg-3">
                         <div class="genneric-section--title-head">
-                            <h3 class="upper small-16">More than one masthead?</h3>
+                            <h3 class="upper small-16 bold">More than one masthead?</h3>
                         </div>
                     </div>
                     <div class="col-12 col-lg-7">
