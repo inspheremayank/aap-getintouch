@@ -24,7 +24,7 @@ include("includes/_header.php");
                     </div>
                     <div class="col-12 col-lg-7">
                         <div class="genneric-section--content">
-                            <p class="highlight">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                            <p class="highlight">We have developed an offer tailored to the specific requirements of the Regional and Small Publishers Innovation Fund. </p>
                         </div>
                     </div>
                 </div>
@@ -35,10 +35,10 @@ include("includes/_header.php");
                     <div class="col-12 col-lg-7">
                         <div class="genneric-section--content">
                             <h3 class="upper red__color">Our Solution</h3>
-                            <p class="highlight">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <p class="highlight">Our solution has been honed through years of development and experience delivering digital products and strategies to regional publishing clients. Designed from the ground up, our package provides software, websites, apps, training, revenue opportunities and extensive support services.</p>
                             <div class="mt-5"></div>
                             <h3 class="upper">Core</h3>
-                            <p class="highlight">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p class="highlight">Our basic package is known as the core, and this is what we recommend as essential components for you to kick-start your digital transformation.</p>
                             <div class="clearfix"></div>
                             <div class="image-withContent__wrapper-content image-withContent__wrapper-content--no-height fullwidth">
                                 <ul class="listing__view listing__view--small-font d-flex flex-wrap one-third p-0">
@@ -74,16 +74,16 @@ include("includes/_header.php");
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
-                                                <h3>Modern, responsive website plus integrations</h3>
+                                                <h3>Modern, responsive websites plus integrations</h3>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                             <div class="clearfix"></div>
-                            <div class="divider-line"></div>
+                            <div class="divider-line divider-line-80"></div>
                             <h3 class="upper">Fullsuite</h3>
-                            <p class="highlight">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p class="highlight">After the core comes the full suite, from which you can pick and choose to suit the needs of your media company. These features have been designed to address the criteria of the grant process outlined by the Federal Government and ACMA.</p>
                             <div class="image-withContent__wrapper-content image-withContent__wrapper-content--no-height fullwidth">
                                 <ul class="listing__view listing__view--small-font d-flex flex-wrap one-third p-0">
                                     <li>
@@ -94,7 +94,7 @@ include("includes/_header.php");
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
-                                                <h3>Enterprise Publishing software</h3>
+                                                <h3>Advanced Enterprise Publishing software </h3>
                                             </div>
                                         </div>
                                     </li>
@@ -102,11 +102,11 @@ include("includes/_header.php");
                                         <div class="listing__view-container">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/app.png" class="img-fluid" alt="revenue icon">
+                                                    <img src="static/images/icons/theme/app.svg" class="img-fluid" alt="revenue icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
-                                                <h3>Paywall plus advertising solution</h3>
+                                                <h3>IOS plus Android native mobile apps</h3>
                                             </div>
                                         </div>
                                     </li>
@@ -118,7 +118,7 @@ include("includes/_header.php");
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
-                                                <h3>Modern, responsive website plus integrations</h3>
+                                                <h3>Enterprise security and support SLA</h3>
                                             </div>
                                         </div>
                                     </li>
@@ -126,11 +126,11 @@ include("includes/_header.php");
                                         <div class="listing__view-container">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="Enterprise icon">
+                                                    <img src="static/images/icons/theme/media.svg" class="img-fluid" alt="Media icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
-                                                <h3>Enterprise Publishing software</h3>
+                                                <h3>Content packs from AAP Newswire and Imagewire</h3>
                                             </div>
                                         </div>
                                     </li>
@@ -142,7 +142,7 @@ include("includes/_header.php");
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
-                                                <h3>Paywall plus advertising solution</h3>
+                                                <h3>Advanced Paywall plus advertising solution</h3>
                                             </div>
                                         </div>
                                     </li>
@@ -154,7 +154,7 @@ include("includes/_header.php");
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
-                                                <h3>Modern, responsive website plus integrations</h3>
+                                                <h3>Digital journalism advertising and social media training</h3>
                                             </div>
                                         </div>
                                     </li>
@@ -190,7 +190,7 @@ include("includes/_header.php");
                     </div>
                     <div class="col-12 col-lg-7">
                         <div class="genneric-section--content">
-                            <p class="highlight">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                            <p class="highlight">We will work with you to develop a proposal that satisfies the requirements of the Regional and Small Publishers Innovation Fund while delivering on your unique publishing needs.</p>
                         </div>
                     </div>
                 </div>
@@ -200,13 +200,13 @@ include("includes/_header.php");
                     </div>
                     <div class="col-12 col-lg-7">
                         <div class="genneric-section--content">
-                            <p class="highlight">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                            <p class="highlight">The process outlined illustrates how we will engage with you to build your proposal for the fund, using our packs as a blueprint. </p>
                             <div class="clearfix"></div>
                             <div class="calendar-section d-flex align-items-center">
                                 <span class="icon">
-                                    <img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="Enterprise icon">
+                                    <img src="static/images/icons/theme/calendar.svg" class="img-fluid" alt="Enterprise icon">
                                 </span>
-                                <span class="title"><span class="bold">Lorem Ipsum has been</span> the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</span>
+                                <span class="title"><span class="bold">The submission process</span> is expected to begin some time after March 2018 and the first successful applications should see funds allocated from June/July 2018 (according to ACMA)</span>
                             </div>
                             <div class="clearfix"></div>
                             <div class="image-withContent__wrapper-content image-withContent__wrapper-content--no-height fullwidth">
@@ -215,60 +215,60 @@ include("includes/_header.php");
                                         <div class="listing__view-container align-items-center">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/application-icon.svg" class="img-fluid" alt="Enterprise icon">
+                                                    <img src="static/images/icons/theme/get-touch.svg" class="img-fluid" alt="get touch icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
-                                                <h3 class="mb-0">Enterprise Publishing software</h3>
+                                                <h3 class="mb-0">Get In Touch</h3>
                                             </div>
                                         </div>
                                         <div class="listing__view-aditional-content">
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                                            <p>Contact our friendly team to understand what is available to you and how we can help. We are a team of journalists, designers, developers and media experts.</p>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="listing__view-container align-items-center">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/revenue.png" class="img-fluid" alt="revenue icon">
+                                                    <img src="static/images/icons/theme/application-icon.svg" class="img-fluid" alt="revenue icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
-                                                <h3 class="mb-0">Paywall plus advertising solution</h3>
+                                                <h3 class="mb-0">Apply with us in early 2018</h3>
                                             </div>
                                         </div>
                                         <div class="listing__view-aditional-content">
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                                            <p>The application process is being developed by the federal government now. We will be in consultation with ACMA to fully understand the process and will be able to guide you through applying ensuring you get the best outcome.</p>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="listing__view-container align-items-center">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/app.png" class="img-fluid" alt="app icon">
+                                                    <img src="static/images/icons/theme/tailored-pack.svg" class="img-fluid" alt="app icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
-                                                <h3 class="mb-0">Modern, responsive website plus integrations</h3>
+                                                <h3 class="mb-0">Receive your tailored pack</h3>
                                             </div>
                                         </div>
                                         <div class="listing__view-aditional-content">
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                                            <p>After understanding your business we will tailor one of our packs to your media company - taking into account the number of mastheads and publications you have and your training needs.</p>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="listing__view-container align-items-center">
                                             <div class="listing__view-icon">
                                                 <span>
-                                                    <img src="static/images/icons/theme/enterprise.png" class="img-fluid" alt="Enterprise icon">
+                                                    <img src="static/images/icons/theme/execute.svg" class="img-fluid" alt="Enterprise icon">
                                                 </span>
                                             </div>
                                             <div class="listing__view-content">
-                                                <h3 class="mb-0">Enterprise Publishing software</h3>
+                                                <h3 class="mb-0">Execute</h3>
                                             </div>
                                         </div>
                                         <div class="listing__view-aditional-content">
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                                            <p>Once the applications are in, the first round of funding will be allocated from July 2018 - we will be ready to kick off your projects then and ensure they are delivered smoothly and efficently.</p>
                                         </div>
                                     </li>
                                 </ul>

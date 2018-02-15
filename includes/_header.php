@@ -6,22 +6,22 @@
                 <aside class="header__section-left">
                     <ul class="d-flex align-items-center">
                         <li class="logo-aap d-none d-lg-block">
-                            <a href="javascript:;">
+                            <a href="http://www.aap.com.au/" target="_blank">
                                 <img src="static/images/logo/logo-aap.svg" class="img-fluid" alt="aap logo" />
                             </a> 
                         </li>
                         <li class="logo-cognitives d-none d-lg-block">
-                            <a href="javascript:;">
+                            <a href="https://www.cognitives.io/" target="_blank">
                                 <img src="static/images/logo/logo-cognitives.svg" class="img-fluid" alt="aap logo" />
                             </a> 
                         </li>
                         <li class="logo-aap d-block d-lg-none">
-                            <a href="javascript:;">
+                            <a href="http://www.aap.com.au/" target="_blank">
                                 <img src="static/images/logo/logo-aap-icon.svg" class="img-fluid" alt="aap logo" />
                             </a> 
                         </li>
                         <li class="logo-cognitives d-block d-lg-none">
-                            <a href="javascript:;">
+                            <a href="https://www.cognitives.io/" target="_blank">
                                 <img src="static/images/logo/logo-cognitives-icon.svg" class="img-fluid" alt="cognitives logo" />
                             </a> 
                         </li>
