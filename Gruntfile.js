@@ -34,26 +34,10 @@ module.exports = function(grunt) {
                     'static/deploy/theme.min.js': [
                         'static/plugins/jquery/js/jquery.min.js',
                         'static/plugins/jquery/js/jquery-migrate-1.2.1.min.js',
-                        'static/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js',
                         'static/plugins/bootstrap/js/popper.min.js',
                         'static/plugins/bootstrap/js/bootstrap.min.js',
-                        'static/plugins/fancybox/js/jquery.fancybox.js',
-                        'static/plugins/chosen-bootstrap/js/chosen.jquery.min.js',
-                        'static/plugins/owl-carousel/js/owl.carousel.min.js',
-                        'static/plugins/jquery.stickyfill/js/jquery.stickyfill.min.js',
-                        'static/plugins/slick/js/slick.min.js',
-                        'static/plugins/jquery.ellipsis/js/jquery.ellipsis.js',
-                        'static/plugins/jquery.bxslider/js/jquery.bxslider.js',
-                        'static/plugins/jquery.bxslider/js/jquery.fitvids.js',
-                        'static/plugins/handlebars-v4.0.5.js',
-                        'static/plugins/jquery.validate/jquery.validate.min.js',
-                        'static/plugins/jquery.noty-2.3.8/js/noty/packaged/jquery.noty.packaged.min.js',                        
-                        'static/js/app.js',
-                        'static/dev/js/home.js',
-                        'static/dev/js/common.js',
-                        'static/dev/js/_article-templates.js',
-                        'static/dev/js/user-articles.js',
-                        'static/dev/js/search.js'
+                        'static/plugins/fancybox/js/jquery.fancybox.js',                      
+                        'static/js/app.js'
                     ]                    
                 }
             }
@@ -61,12 +45,14 @@ module.exports = function(grunt) {
         cachebreaker: {
             theme: {
                 options: {
-                    match: ['theme.min.js', 'output.min.css', 'contentbox-breakup.css']
+                    match: ['theme.min.js', 'default.min.css']
                 },
                 files: {
                     src: [
-                        'layouts/partials/_javascript.twig',
-                        'layouts/main.twig'
+                        'index.html',
+                        'our-offer.html',
+                        'our-partner.html',
+                        'our-price.html'
                     ]
                 }
             }
@@ -79,23 +65,21 @@ module.exports = function(grunt) {
             },
             theme: {
                 files: {
-                    'static/deploy/output.min.css' : [
-                        'static/plugins/jquery.noty-2.3.8/demo/animate.css',
+                    'static/deploy/default.min.css' : [
                         'static/css/vendors.css',
 			'static/css/default.css'
                     ]
                 }
             }
-        },
+        }
     });
     
-    //grunt.loadNpmTasks('grunt-contrib-watch');
-    //grunt.loadNpmTasks('grunt-contrib-uglify');
-    //grunt.loadNpmTasks('grunt-cache-breaker');
-    //grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-cache-breaker');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     
     // Default task(s).
-    grunt.registerTask('default');
+    grunt.registerTask('default', ['uglify', 'cssmin', 'cachebreaker']);
 };
