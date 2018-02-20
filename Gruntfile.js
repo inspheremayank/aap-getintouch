@@ -37,6 +37,7 @@ module.exports = function(grunt) {
                         'static/plugins/bootstrap/js/popper.min.js',
                         'static/plugins/bootstrap/js/bootstrap.min.js',
                         'static/plugins/fancybox/js/jquery.fancybox.js',                      
+                        'static/plugins/slick/js/slick.min.js',                      
                         'static/js/app.js'
                     ]                    
                 }

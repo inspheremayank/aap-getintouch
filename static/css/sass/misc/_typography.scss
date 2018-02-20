@@ -175,7 +175,14 @@ q {
     font-style: italic;
     color: $black;
 }
-
+.link-underline--withcolor { 
+    border-bottom: 1px solid $zblack;
+    @include padding-bottom(3px);
+    &:hover, &:focus {
+        color: $red !important;
+        border-color: $red !important;
+    }
+}
 
 
 
