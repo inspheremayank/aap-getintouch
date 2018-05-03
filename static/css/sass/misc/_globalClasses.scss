@@ -146,6 +146,11 @@
         max-width: calc(540px - 20px);
         float: none;
         margin: 0 auto;
+    }
+    &.break992 {
+        @media #{$media-ipadPortrait} {
+            width: calc(720px - 10px);
+        } 
     }    
 }
 .flip-containers {
