@@ -53,7 +53,8 @@ module.exports = function(grunt) {
                         'index.html',
                         'our-offer.html',
                         'our-partner.html',
-                        'our-price.html'
+                        'our-price.html',
+                        'publisher-grant-overview.html'
                     ]
                 }
             }
